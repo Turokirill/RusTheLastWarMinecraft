@@ -1,0 +1,454 @@
+{
+	autofocus_id: "2A0AC5C07FA382E4"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dimensiones_y_otros_mundos"
+	group: "5A1C9B76656CC2FE"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "12E51CCCB94FBF8E"
+	images: [{
+		height: 10.0d
+		image: "alexsmobs:textures/entity/void_worm/portal/portal_idle_2.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: -1.5d
+		y: 0.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fEverbright Dimension — это мир бесконечного &bблестящего неба&r и вечного дневного света. &7Чтобы начать свое путешествие, найдите загадочного &bGatekeeper&r и исследуйте это новое царство чудес и опасностей. Благодаря уникальным биомам и &fмогущественным существам&r, Everbright предлагает безграничные возможности для приключений. Вы готовы увидеть, что находится за порталом?"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "blue_skies:everbright_portal"
+			id: "4DC2244B8D615C7D"
+			rewards: [
+				{
+					id: "6047BE268EFB7A98"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F3ACE7DC3A355F0"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+			]
+			subtitle: "&7Найдите &bПривратника&r и раскройте &7тайны Вечнояркого..."
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				icon: "blue_skies:crystal_glass"
+				id: "7C74840AFC7171DB"
+				title: "Посетите Эвербрайт"
+				type: "dimension"
+			}]
+			title: "&b&lВ вечнояркий свет&r"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fМир, где никогда не заходит солнце и где сохраняются древние тайны. &6Привратник&r хранит ключ к этому вечному дню. Найдите их дом, соберите предметы и пройдите через портал в страну, где правит свет, но опасности скрываются за каждым углом. &aГотовы ли вы принять вызовы Everdawn?&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "blue_skies:everdawn_portal"
+			id: "482E304787E9AA1C"
+			rewards: [
+				{
+					id: "2B490BB1AC9683A9"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5E027606F675C2AC"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+			]
+			subtitle: "&7Найдите дом привратника, чтобы войти..."
+			tasks: [{
+				dimension: "blue_skies:everdawn"
+				icon: "blue_skies:midnight_glass"
+				id: "4168FE2B00226DF9"
+				title: "Посетите Эвердаун"
+				type: "dimension"
+			}]
+			title: "&6&lПутешествие в Эвердаун&r"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fШагните в &bAether&r, где облака образуют саму землю под вашими ногами, а над головой парят мифические существа. Сияющие пейзажи, плавучие острова и скрытые храмы, полные сокровищ и опасностей. Будьте осторожны, небо не так мирно, как кажется. &aГотовы ли вы покорить небеса и завладеть сокровищами эфира?&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "aether:aether_portal_frame"
+			id: "0608CF20260D31A7"
+			rewards: [
+				{
+					id: "71B2887ACA1F129C"
+					type: "xp"
+					xp: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CF1F76F4006F68D"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "5143F0F86D0DA2A0"
+					item: "aether:ambrosium_torch"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			subtitle: "&7Ждет небесное восхождение...&r"
+			tasks: [
+				{
+					dimension: "aether:the_aether"
+					icon: "aether:aether_grass_block"
+					id: "6CAB26D8477C8CDC"
+					title: "Посетите эфир"
+					type: "dimension"
+				}
+				{
+					count: 10L
+					id: "5ED71D87B940D96A"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "3E2F1B0BCFD4B0C8"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
+			title: "&b&lЦарство облаков&r"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fШагните в &5Сумеречный лес&r, загадочную землю, окутанную вечными сумерками. Путешествуйте по заколдованным лесам, сталкивайтесь с мифическими существами и находите скрытые подземелья. &aГотовы ли вы бросить вызов неизвестному &r&7в этом легендарном мире?&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "30AFE6ECDA730ED1"
+			rewards: [
+				{
+					id: "4AC3A465310BBB57"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F6835501E7658B7"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+				{
+					id: "3EA2FFF9EDB6FACE"
+					item: "twilightforest:firefly_jar"
+					type: "item"
+				}
+			]
+			subtitle: "&7Наступают вечные сумерки..."
+			tasks: [
+				{
+					dimension: "twilightforest:twilight_forest"
+					icon: "twilightforest:time_sapling"
+					id: "78E004D38FC46D19"
+					title: "Посетите Сумеречный лес"
+					type: "dimension"
+				}
+				{
+					count: 8L
+					id: "0A3AEF81DB5F3044"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:flowers"
+						}
+					}
+					title: "Получите 8 цветов"
+					type: "item"
+				}
+				{
+					id: "1CC93E68E7684DDA"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "&5&lСумеречное путешествие&r"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fОтправляйтесь в самые глубокие глубины мира, чтобы найти &8&nДругую сторону&r. В этом забытом измерении лежат заброшенные руины древней цитадели, ожидающие своего открытия. &9Осторожно&r; опасность таится в каждой тени. &aНайдете ли вы секреты, скрытые во тьме?&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "deeperdarker:echo_boat"
+			id: "2A0AC5C07FA382E4"
+			rewards: [
+				{
+					id: "4226A7CC9E749B9A"
+					type: "xp"
+					xp: 35
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7134035E944BE5D2"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+				{
+					id: "6AD337BC938BAC63"
+					item: {
+						Count: 1
+						id: "minecraft:lingering_potion"
+						tag: {
+							Potion: "minecraft:night_vision"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "&7Там, где царит тьма..."
+			tasks: [
+				{
+					dimension: "deeperdarker:otherside"
+					icon: "deeperdarker:soundproof_glass"
+					id: "5AAAC502D7B795CA"
+					title: "Посетите Другую Сторону"
+					type: "dimension"
+				}
+				{
+					icon: "minecraft:reinforced_deepslate"
+					id: "512AC0FBF835AFCA"
+					observe_type: 0
+					timer: 0L
+					title: "Найдите усиленный сланец"
+					to_observe: "minecraft:reinforced_deepslate"
+					type: "observation"
+				}
+				{
+					id: "408D483E91ECEF65"
+					item: "deeperdarker:heart_of_the_deep"
+					type: "item"
+				}
+			]
+			title: "&5&lПогружение в тени"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fВойдите в &dШмель&r, где &6пчелы&r являются правителями, а &6мед&r течет в изобилии. Это миниатюрное измерение может показаться маленьким, но оно таит в себе невыразимые секреты и испытания. &aГотовы покорить мир, где важна каждая капля меда?&r &b Не позволяйте размерам ввести вас в заблуждение: приключения ждут на каждом углу!&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:bee_nest"
+			id: "3EF659D3D6EAF5EC"
+			rewards: [
+				{
+					id: "657671F038C446E6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33FC3545FF75BF79"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+				{
+					count: 3
+					id: "09EC3153867F8F17"
+					item: "minecraft:honeycomb"
+					type: "item"
+				}
+			]
+			subtitle: "&7Крошечный, но могучий, царство меда и тайн...&r"
+			tasks: [
+				{
+					dimension: "the_bumblezone:the_bumblezone"
+					icon: "the_bumblezone:honeycomb_brood_block"
+					id: "218531619786546D"
+					title: "Посетите Bunblezone"
+					type: "dimension"
+				}
+				{
+					icon: "minecraft:bee_nest"
+					id: "2102CBE8AAA88FF1"
+					observe_type: 0
+					timer: 0L
+					title: "Найдите пчелиное гнездо"
+					to_observe: "minecraft:bee_nest"
+					type: "observation"
+				}
+				{
+					id: "3088A9BD303BE72B"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			title: "&d&lМир чудес&r"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fПриготовься, искатель приключений, к путешествию в &2Конец&r. Легенды рассказывают о таинственном драконе и несметных сокровищах, спрятанных за пределами пустоты. Используйте свои &aГлаза Края&r и пройдите через портал, чтобы встретить свою судьбу. &cСможете ли вы победить дракона или Конец поглотит вас?&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "minecraft:end_portal_frame"
+			id: "768FB812CD83E256"
+			rewards: [
+				{
+					id: "51FD8728F666A266"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A2F3F0880B41AD6"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+				{
+					id: "071C38E9CC097AB3"
+					item: "minecraft:chorus_fruit"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Последний рубеж ждет..."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					icon: "minecraft:end_stone"
+					id: "27CBDCC8AF0CEAF4"
+					title: "Посетите Край"
+					type: "dimension"
+				}
+				{
+					icon: "minecraft:mossy_stone_bricks"
+					id: "305260D0EC80E845"
+					structure: "betterstrongholds:stronghold"
+					title: "Найдите крепость"
+					type: "structure"
+				}
+				{
+					count: 12L
+					id: "70955E6F219CA206"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					icon: "minecraft:end_portal_frame"
+					id: "02FCBE222D5D78CF"
+					observe_type: 0
+					timer: 0L
+					title: "Найдите конечный портал"
+					to_observe: "minecraft:end_portal_frame"
+					type: "observation"
+				}
+			]
+			title: "&5&l Конец времен&r"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7EA7BFD0279DA91E"]
+			description: ["&fШагните в &4Пустоту&r, место, где &6лава течет&r как реки, и &8души&r блуждают бесконечно. Это царство вечного огня и опасных существ ждет вашей храбрости. Сможете ли вы пережить жару, свиней и призраков? Только смелые смогут покорить это &4адское&r измерение. &aПриготовьтесь к хаосу!&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:flint_and_steel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "711A61AFAEA436D0"
+			rewards: [
+				{
+					id: "3C6D5A503C6F6CDE"
+					type: "xp"
+					xp: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E437BED4BD04926"
+					table_id: 4734557310209495957L
+					type: "random"
+				}
+				{
+					id: "5815960A60FFEB9C"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+			]
+			subtitle: "&7Где огонь никогда не угасает..."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "6FD46489A54C989E"
+					title: "Посетите Пустоту"
+					type: "dimension"
+				}
+				{
+					count: 10L
+					id: "69DF4C96845CA72E"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "21C674F49941714A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:creeper_igniters"
+						}
+					}
+					title: "Получите портальный воспламенитель"
+					type: "item"
+				}
+			]
+			title: "&4&lНет мира душам&r"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["738968CED6C892BF"]
+			dependency_requirement: "one_started"
+			description: ["&f&dМультивселенная&r зовет, искатель приключений. Каждый портал, который вы открываете, — это дверь в мир, полный тайн, силы и опасностей. Вы &4готовы&r покорить каждое измерение и узнать, что лежит за его пределами? &aПройдите, если осмелитесь!&r"]
+			hide_until_deps_complete: true
+			icon: "minecraft:grass_block"
+			id: "7EA7BFD0279DA91E"
+			rewards: [{
+				id: "0C77F43FF5D216DB"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			subtitle: "&7Шаг в неизведанное..."
+			tasks: [{
+				id: "30B04B2C85955253"
+				title: "Места для изучения"
+				type: "checkmark"
+			}]
+			title: "&6&lПортальные приключения&r"
+			x: -2.5d
+			y: -0.5d
+		}
+	]
+	title: "&d Неизведанные миры"
+}

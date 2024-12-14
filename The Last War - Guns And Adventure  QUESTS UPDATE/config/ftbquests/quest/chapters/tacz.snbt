@@ -1,0 +1,3012 @@
+{
+	autofocus_id: "682DF984B41397BE"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tacz"
+	group: "31FB61CF8D7636BB"
+	icon: {
+		Count: 1
+		id: "tacz:modern_kinetic_gun"
+		tag: {
+			GunCurrentAmmoCount: 7
+			GunFireMode: "SEMI"
+			GunId: "tacz:deagle"
+			HasBulletInBarrel: 1b
+		}
+	}
+	id: "5338AB36F37EA112"
+	images: [{
+		click: "#457110F50A907BF8"
+		height: 3.0d
+		image: "minecraft:textures/gui/quests/tlwbanner.png"
+		rotation: 0.0d
+		width: 8.91d
+		x: 0.0d
+		y: -4.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["457110F50A907BF8"]
+			description: [
+				"&fСтол &5Gun Smith&r — ваш незаменимый инструмент для изготовления и настройки огнестрельного оружия. От создания смертоносного оружия до установки &bмощных приспособлений&r — все начинается здесь."
+				"&aДавайте загружаемся!&r"
+			]
+			hide_until_deps_complete: true
+			id: "7A8493FC492E0B39"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "526B8ADE40B895E1"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "01AA65C98986C12A"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Проложите свой путь к огневой мощи...&r"
+			tasks: [{
+				id: "65CD21655C03D490"
+				item: "tacz:gun_smith_table"
+				type: "item"
+			}]
+			title: "&6&lСтол Гана Смита!&r"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2800DFF9AFBEFE42"]
+			description: ["&fВойдите в &cмир TACZ&r, где &bсовременная огневая мощь&r сочетается с индивидуальными возможностями. От &astealthy&r до &6explosive&r — ваш арсенал полностью в вашем распоряжении. &fГотовься, целись, доминируй!&r"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:ammo_box"
+				tag: {
+					Creative: 1b
+				}
+			}
+			id: "457110F50A907BF8"
+			shape: "hexagon"
+			subtitle: "&7Мир современной огневой мощи ждет...&r"
+			tasks: [{
+				id: "2C43F6F94423C000"
+				type: "checkmark"
+			}]
+			title: "&7&lАрсенал на свободе&r"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["65CD21655C03D490"]
+			description: ["&fСоздайте &bгуманоидную мишень&r и проверьте свои навыки стрельбы. Идеально подходит для оттачивания меткости перед столкновением с настоящими врагами. Чем больше вы тренируетесь, тем лучше вы будете выступать, когда это важно."]
+			hide_until_deps_complete: true
+			icon: "tacz:target"
+			id: "0FCFE321AA098AED"
+			rewards: [
+				{
+					count: 8
+					id: "5FFA5B9A13514EBC"
+					item: "minecraft:rail"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2371B01FD1EE7D86"
+					item: "minecraft:powered_rail"
+					type: "item"
+				}
+				{
+					id: "42F85AFCCCF02DB0"
+					item: "minecraft:detector_rail"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3BE097925EC9F320"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+			]
+			subtitle: "&7Управляйте своей точностью с точностью&r"
+			tasks: [
+				{
+					id: "0B6A6D48E3771E08"
+					item: "tacz:target"
+					type: "item"
+				}
+				{
+					id: "111348E1C078CA13"
+					item: "tacz:target_minecart"
+					type: "item"
+				}
+			]
+			title: "&6&l Обучение снайперской стрельбе"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fСоздайте &7Каменную статую&r, чтобы выставить напоказ свое самое ценное оружие. Пусть ваш арсенал будет выставлен на всеобщее обозрение! Будь то хвастовство или эстетика, нет лучшего способа продемонстрировать свою коллекцию."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "782B1222C41FB7E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "208665545A26252F"
+				table_id: 3466793131357567242L
+				type: "loot"
+			}]
+			subtitle: "&7Покажите свое оружие стильно&r"
+			tasks: [{
+				id: "1CE99DC003F8A509"
+				item: "tacz:statue"
+				type: "item"
+			}]
+			title: "&3&lПродемонстрируйте шедевр"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["Надежное, легкое и простое в изготовлении, это оружие станет вашим первым шагом на пути к настоящей меткой стрельбе. Оснастите его, протестируйте и станьте единым целым с его силой."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 0
+					GunFireMode: "SEMI"
+					GunId: "tacz:glock_17"
+					HasBulletInBarrel: 0b
+				}
+			}
+			id: "2511E62961691B6C"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6A73B80E25B3697E"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					id: "488E1827C089815B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Освойте свой первый пистолет!"
+			tasks: [
+				{
+					id: "3F671504BD81A936"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 13
+							GunFireMode: "SEMI"
+							GunId: "lradd:p250"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6628598C26B2D608"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 0
+							GunFireMode: "SEMI"
+							GunId: "tacz:glock_17"
+							HasBulletInBarrel: 0b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2ADB6BAB409CA4FA"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 16
+							GunFireMode: "AUTO"
+							GunId: "tacz:cz75"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lТочность под рукой"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2511E62961691B6C"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 10
+					GunFireMode: "SEMI"
+					GunId: "lradd:malorian"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "153EFFEB92AC4976"
+			min_required_tasks: 1
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "48B623318AA6524E"
+					table_id: 2296090824792677534L
+					type: "choice"
+				}
+				{
+					id: "07B2818C0AD3D0E1"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			size: 0.6d
+			subtitle: "&7Пришло время увеличить огневую мощь!"
+			tasks: [
+				{
+					id: "314B52F6CFB05068"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 12
+							GunFireMode: "SEMI"
+							GunId: "tacz:p320"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "33995F688CBFAF74"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 10
+							GunFireMode: "SEMI"
+							GunId: "lradd:malorian"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lОбновление до совершенства"
+			x: 2.4d
+			y: -0.8999999999999999d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fСоберите &aПистолет-пулемет&r, идеально подходящий для ближнего боя. Быстрое и смертоносное, это оружие переломит ситуацию, когда ловкость и быстрая стрельба имеют решающее значение. Экипируйте его и доминируйте на поле битвы!"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:hk_mp5a5"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "5A8A5CE5B2AD4E75"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7BF290111C3CD98C"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3970932CC4CF29C4"
+					table_id: 3466793131357567242L
+					type: "choice"
+				}
+				{
+					id: "1F9B6B04E958D102"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Скрытность и скорость."
+			tasks: [
+				{
+					id: "0E52021C6D02DE7B"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:hk_mp5a5"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "592136EB1A56E2ED"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 25
+							GunFireMode: "AUTO"
+							GunId: "tacz:ump45"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "533A7A3A52B86199"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:nailgun"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "56B98B45E759AD2E"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 50
+							GunFireMode: "AUTO"
+							GunId: "lradd:p90"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "1A58AB82186B678F"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 20
+							GunFireMode: "AUTO"
+							GunId: "tacz:uzi"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "001CB1F8F92171AB"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 25
+							GunFireMode: "AUTO"
+							GunId: "lradd:smg45"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "70820616A83D81AC"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 19
+							GunFireMode: "AUTO"
+							GunId: "tacz:vector45"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4BC33B25A87C18DB"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 64
+							GunFireMode: "AUTO"
+							GunId: "lradd:pp19"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lБесшумная сила"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fСоздайте универсальную &6винтовку&r, способную с легкостью вести бой на средних и дальних дистанциях. Надежный, точный и идеально подходящий для любого боевого сценария. Пусть каждый выстрел будет на счету!"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:scar_l"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "634BE36EC9B3AB87"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "051F27C33E91D51A"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3AEE4FAF5919097D"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "74BFE7ABE6BB0708"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Баланс мощности и точности."
+			tasks: [
+				{
+					id: "234A60DCAF6D5055"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:sg553"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "049D1AA56C0AF2A5"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:xm8"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "5E0BF9DDBA16DD63"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 25
+							GunFireMode: "AUTO"
+							GunId: "lradd:famas"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "50BFA32956120803"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:mk47"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2607129497A379F8"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:acr"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "3FACF74B149B10DD"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:mcx"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "096682930BB84608"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 20
+							GunFireMode: "AUTO"
+							GunId: "lradd:rfb"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "26713ED55EFB43B6"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:aug"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "666637F8305F4AFB"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 10
+							GunFireMode: "SEMI"
+							GunId: "tacz:sks_tactical"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "12EF805BBAD13FAF"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:ak47"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "3AD46BDB2419D04C"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:hk416d"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4DE5D39FBD87752A"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:m4a1"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0312E402C4CEB5A0"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 20
+							GunFireMode: "AUTO"
+							GunId: "tacz:m16a1"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "7167CB4D57DA5BCD"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 20
+							GunFireMode: "SEMI"
+							GunId: "tacz:hk_g3"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "16C1CD3826503B97"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "BURST"
+							GunId: "tacz:m16a4"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0840964EF77F3A6C"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:scar_l"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0D5EC0D08887CA6F"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:aug"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lТочный штурм"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fСоздайте смертоносную &bснайперскую винтовку&r, созданную для точности и смертоносности на расстоянии. Когда терпение и одна пуля имеют решающее значение, эта винтовка гарантирует, что вы каждый раз попадете в цель."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 5
+					GunFireMode: "SEMI"
+					GunId: "tacz:m95"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "27532CE2B290325B"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7FE3F383D9DAAA1E"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A908F7FA555556B"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "714C014F1A34E46E"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Поражайте цели издалека."
+			tasks: [
+				{
+					id: "5103D11704BA6182"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 8
+							GunFireMode: "SEMI"
+							GunId: "lradd:axmc"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6D96219CCADEA20D"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 1
+							GunFireMode: "SEMI"
+							GunId: "lradd:nitro_505"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "19D29E190167F83B"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 10
+							GunFireMode: "SEMI"
+							GunId: "lradd:m200"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0AFC1969D9F6E257"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 5
+							GunFireMode: "SEMI"
+							GunId: "tacz:ai_awp"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "71F7AC2A50049946"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 5
+							GunFireMode: "SEMI"
+							GunId: "tacz:m95"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2BF0F40423DD6F15"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 20
+							GunFireMode: "SEMI"
+							GunId: "lradd:gauss_rifle"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lДальнобойный хищник"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fСоздайте мощный &6Дробовик&r, который уничтожает все на своем пути. Это идеальное оружие для хаоса на ближней дистанции, обеспечивающее огромную останавливающую силу при каждом выстреле. Приготовьтесь к удару!"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 2
+					GunFireMode: "BURST"
+					GunId: "tacz:db_short"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "010770636DB21DF4"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D1DA28E5BAACEAC"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3BDE210EE7FB5DC7"
+					table_id: 3466793131357567242L
+					type: "choice"
+				}
+				{
+					id: "117CD111F4B890AB"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Для тех случаев, когда одного выстрела недостаточно."
+			tasks: [
+				{
+					id: "566777DA968F07AA"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 2
+							GunFireMode: "BURST"
+							GunId: "tacz:db_short"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "226F85CCAA949B32"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 5
+							GunFireMode: "SEMI"
+							GunId: "lradd:mag7"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "71248B04658F8118"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 2
+							GunFireMode: "SEMI"
+							GunId: "tacz:db_long"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lРасколотая земля"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["72CAA795609B55E2"]
+			description: ["&fСоздайте &eвзрывное оружие&r и принесите хаос на поле битвы. Будь то гранаты или ракетные установки, эти устройства наносят огромный урон по площади, гарантируя, что ваши враги не узнают, что их поразило!"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 1
+					GunFireMode: "SEMI"
+					GunId: "tacz:rpg7"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "2530A899E196B863"
+			min_required_tasks: 1
+			rewards: [
+				{
+					count: 6
+					id: "28B1BC5F85A54DB6"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "tacz:rpg_rocket"
+						}
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 8
+					id: "26D7C671BAA799C5"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "tacz:40mm"
+						}
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "797A9A224E789520"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "37EEB822AB3B32DE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Уничтожьте своих врагов."
+			tasks: [
+				{
+					id: "7304920AB972CFF1"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 1
+							GunFireMode: "SEMI"
+							GunId: "tacz:rpg7"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0FD4B5A6E326FB03"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 1
+							GunFireMode: "SEMI"
+							GunId: "tacz:m320"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "506698537EAD6F26"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 4
+							GunFireMode: "SEMI"
+							GunId: "lradd:m202"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lВзрывной артистизм"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fСоздайте &cТяжелое оружие&r, способное доминировать на поле боя. Медленное, но мощное, это оружие гарантирует, что ничто не встанет на вашем пути. Приготовьтесь к подавляющей силе!"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 75
+					GunFireMode: "AUTO"
+					GunId: "tacz:m249"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "72CAA795609B55E2"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07CF64FF361E4F55"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6F3BB03F80E85840"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "43B0C66A606CB96C"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Высвободите чистое разрушение."
+			tasks: [
+				{
+					id: "1721572F3859914F"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 40
+							GunFireMode: "SEMI"
+							GunId: "lradd:ultimax100"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "564C95773C4685F8"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 150
+							GunFireMode: "AUTO"
+							GunId: "lradd:mg42"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "72767F198BF8E8D8"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 75
+							GunFireMode: "AUTO"
+							GunId: "tacz:m249"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lХэви-метал"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fСоздайте &cPro Grip&r, усовершенствованное приспособление для стрелков, которым требуется максимальная точность и контроль отдачи. Поднимите свое владение оружием на новый уровень и доминируйте на поле с каждым выстрелом. &aГотовы к стабильности на элитном уровне?&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:grip_magpul_afg_2"
+				}
+			}
+			id: "097B1D1580D8F6EB"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "62FCA171FC445D70"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "25047AFAEF0BA265"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Для экспертов по контролю отдачи."
+			tasks: [
+				{
+					id: "0A9AA4F15CADB5E1"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:grip_cqr_g2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "651AF364CFA9F358"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:grip_vertical_talon"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "724ACA74C7C68571"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:grip_vertical_military"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "502435CF59094AC6"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:grip_vertical_ranger"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2EF85C6EAE8C5AA6"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:grip_vg1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6CC26D6A25B3AB1F"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:grip_magpul_afg_2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "140AA71714DEA96B"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:grip_bipod"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lPro Grip"
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: [
+				"&fСоздайте специализированные &aУлучшения боеприпасов&r, чтобы настроить свои пули для различных боевых сценариев. Выберите свой стиль и получите тактическое преимущество!"
+				"&r"
+				""
+				"&c&lIncendiary Ammo{tacz.desc.13.2}: &7Set your enemies ablaze with every shot. Ideal for chaotic, high-damage situations.{tacz.desc.13.2}"
+				"&d&lHollow Point{tacz.desc.13.2}: &7Maximize stopping power for unarmored targets, dealing critical damage on impact.{tacz.desc.13.2}"
+				"&4&lExplosive Ammo{tacz.desc.13.2}: &7Cause small explosions on impact, turning each shot into a deadly blast.{tacz.desc.13.2}"
+				"&b&lFull Metal Jacket{tacz.desc.13.2}: &7Penetrate armor and obstacles with ease, perfect for high-resilience enemies.{tacz.desc.13.2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "7D0D1D94E23EE49B"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B8CC971578DCE16"
+					table_id: 1841724982511844555L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "041E4FC3642DBCAE"
+					table_id: 2296090824792677534L
+					type: "choice"
+				}
+				{
+					id: "4B8DF1D6E2201492"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			subtitle: "&7Улучшайте свои пули, доминируйте на поле битвы!"
+			tasks: [
+				{
+					id: "6A93BE2C4B0E2070"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:ammo_mod_hp"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "7616E4581FAB80B9"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:ammo_mod_i"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4D11C729D0289FB0"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:ammo_mod_he"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0D1C64C4C572606B"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:ammo_mod_fmj"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lВладение боеприпасами"
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fСоздайте &aStock&r, чтобы лучше контролировать отдачу вашего оружия. Идеально подходит для новичков, желающих повысить точность каждого выстрела. &bДержитесь крепко за свое огнестрельное оружие!&r"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:stock_militech_b5"
+				}
+			}
+			id: "6DAD1015FBBD8E6C"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4A5A42F0C0E6CA89"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "4CB1B69A3CBEE7CC"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Начните с основ стабильности..."
+			tasks: [
+				{
+					id: "726CDD003428F01D"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:stock_tactical_ar"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "28827C26AE92F82F"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:stock_carbon_bone_c5"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "5B6097D94B5D0D20"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:stock_militech_b5"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lСоздать стоковую"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fСоберите &eЗаводской запас&r, предназначенный для обеспечения надежной точности прямо с заводской линии. Идеально подходит для стрелков, которым нужна стабильная производительность. &aПриготовьтесь к плавному управлению и устойчивому прицеливанию!&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:oem_stock_light"
+				}
+			}
+			id: "3DD6E57D37B40508"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "17061C6B14B8E432"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "130D09CDFA9F9A70"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Стандартный выпуск, высочайшая производительность."
+			tasks: [
+				{
+					id: "707761361EABB1BB"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:oem_stock_tactical"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6B51B39E4DA91683"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:oem_stock_light"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "279CD10E5F974708"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:oem_stock_heavy"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lЗаводской запас"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fУстановите &bглушитель&r на свое оружие, чтобы заглушить выстрелы и оставаться незаметным. Это приспособление идеально подходит для скрытных миссий и позволяет уничтожать цели, не предупреждая все поле боя."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:muzzle_silence_mirage"
+				}
+			}
+			id: "275A1DDA4D7883A8"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4612921FD2C9C572"
+					table_id: 3466793131357567242L
+					type: "choice"
+				}
+				{
+					id: "4B46B89AFEFC7A68"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Тихий, но смертоносный."
+			tasks: [
+				{
+					id: "0D23CA7232BCE57F"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_silence_mirage"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "039A913BD4345983"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_silence_phantom_s1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "7BF2F1C2980D7224"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:muzzle_s_c784"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "25374A2DAF51EA29"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_silence_ptilopsis"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "143E25929E51F854"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_silence_knight_qd"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "72F744EBBAD13022"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_silence_ursus"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lПрикрепите глушитель"
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["153EFFEB92AC4976"]
+			description: ["&fСоздайте &eЗолотого пустынного орла&r, символ мощи и превосходства. Усовершенствованный лучшими аксессуарами, это не просто оружие, а символ огневой мощи."]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 9
+					GunFireMode: "SEMI"
+					GunId: "tacz:deagle_golden"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "5BA556763E32B32D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6566E3E6696B8575"
+					table_id: 1841724982511844555L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E07D607A922F070"
+					table_id: 2296090824792677534L
+					type: "choice"
+				}
+				{
+					id: "086FD3E6E2069C38"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			subtitle: "&7Мощь, Престиж, Совершенство!"
+			tasks: [
+				{
+					id: "2C5D8EE9C0D60AE0"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 9
+							GunFireMode: "SEMI"
+							GunId: "tacz:deagle_golden"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "33130132142833AA"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:deagle_golden_long_barrel"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "3B4FC5B211DCF00F"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_t1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lЗолотой орел"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fУстановите &cДульный тормоз&r, чтобы уменьшить отдачу при выстреле и сделать ваше оружие более стабильным и точным. Идеально подходит для продолжительной стрельбы, помогает сохранять стабильное прицеливание и точность выстрелов."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:muzzle_brake_cthulhu"
+				}
+			}
+			id: "42034EED97233815"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F3761D3F08B68DF"
+					table_id: 3466793131357567242L
+					type: "choice"
+				}
+				{
+					id: "76591A0384AE4D10"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Управляйте отдачей."
+			tasks: [
+				{
+					id: "7A711CD9CDE0E2D5"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_brake_trex"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6D3D509A72871AB5"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_brake_cyclone_d2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "016DE73B1A5C8CD0"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_brake_pioneer"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "156680D267A65EF4"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:muzzle_brake_cthulhu"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lОснастить дульный тормоз"
+			x: -4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fБлагодаря &6Компенсатору&r ваше оружие остается сбалансированным, уменьшая подъем дульного среза. Держите перекрестие на цели, особенно во время быстрой стрельбы, чтобы лучше контролировать каждый выстрел."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "347E3048314AE897"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "434F1EC63516CD6D"
+					table_id: 3466793131357567242L
+					type: "choice"
+				}
+				{
+					id: "79C0083417735825"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Сбалансируйте каждый кадр."
+			tasks: [{
+				id: "0678D570BA850B3A"
+				item: {
+					Count: 1
+					id: "tacz:attachment"
+					tag: {
+						AttachmentId: "tacz:muzzle_compensator_trident"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "&6&lДобавить компенсатор"
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fОденьте &aШтык&r, чтобы разблокировать атаки ближнего боя с увеличенным уроном. Когда враги подойдут слишком близко, переключитесь на это мощное приспособление и сразитесь с ними лицом к лицу с разрушительной силой."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:bayonet_6h3"
+				}
+			}
+			id: "5DFB176DCBA59E98"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0655C717577B6C25"
+					table_id: 3466793131357567242L
+					type: "choice"
+				}
+				{
+					id: "53116D77D8EAC132"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Приготовьтесь к близким столкновениям."
+			tasks: [
+				{
+					id: "73BE3CE674832F28"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:bayonet_6h3"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "02F20097EC6ABC70"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:bayonet_m9"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lПрикрепите штык"
+			x: -4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fОснастите свой пистолет точным &bприцелом&r, предназначенным для боя на ближней и средней дистанции."]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:sight_sro_dot"
+				}
+			}
+			id: "237E777E92026635"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B743B61F6F35E88"
+					table_id: 3466793131357567242L
+					type: "random"
+				}
+				{
+					id: "48B1F21AD37EF309"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Поднимите свою цель на новый уровень..."
+			tasks: [
+				{
+					id: "4C2629BACFB49B55"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_rmr_dot"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "76F11C320D07EEE3"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_sro_dot"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lПрицел для пистолета"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fДобавьте &6стандартный прицел&r к своей винтовке или дробовику, который идеально подойдет для разнообразных боевых сценариев. С этим прицелом вы будете готовы к любой ситуации: от ближнего боя до тактики на средней дистанции."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "lradd:sight_romeo1"
+				}
+			}
+			id: "00DB4A55C36E4E7E"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05608741E9C3AD72"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "322198F5AF1D5D43"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Повысьте свою тактическую универсальность!"
+			tasks: [
+				{
+					id: "788AB8B3FFE2C899"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:nsic_sight"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "778E80F9299B1C84"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:scope_strikefire2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "792AB943AED70262"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_552"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "04CA4C110E783EE4"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_coyote"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "18FFB2B3D4B32441"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_uh1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "1B228DFBAC3111F6"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_t2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "5C16398F6A58CCE0"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sight_exp3"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4CB172E08CAA2BE9"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:sight_holosun_reddot"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "15C71BB6E5BDCD8B"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:sight_romeo1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lСтандартная область действия"
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fСоздайте &csнайперский прицел&r с регулируемым масштабом, идеально подходящий для уничтожения на больших дистанциях. Если вам нужен широкий обзор или высокая точность, этот прицел адаптируется к любому сценарию снайперской стрельбы."]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:scope_retro_2x"
+				}
+			}
+			id: "12DAA890972CC633"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2A07BBB53B401013"
+					table_id: 1841724982511844555L
+					type: "random"
+				}
+				{
+					id: "568259604A997CBE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Овладейте искусством дистанции..."
+			tasks: [
+				{
+					id: "2E2974C9F4855344"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:scope_acog_ta31"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "319919BE5FF9F26B"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:scope_holosun"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "7673D1B22706AB84"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:scope_lpvo_1_6"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6BBC00487702DBDE"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:scope_elcan_4x"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "5B0CDA3782ACEF6D"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "lradd:scope_re"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "10D39FC76B4A7CB0"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:scope_standard_8x"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2ACF054D91BC5885"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:scope_retro_2x"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lРегулируемый объем"
+			x: -2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fБудь то винтовки, дробовики или пистолеты, боеприпасы — ключ к успеху в бою. Пришло время создать свои собственные &eAmmunition&r и убедиться, что ваше оружие всегда готово к стрельбе. Пусть ваши журналы будут полными, а ваша цель — верной!"]
+			icon: {
+				Count: 1
+				id: "tacz:ammo"
+				tag: {
+					AmmoId: "tacz:30_06"
+				}
+			}
+			id: "682DF984B41397BE"
+			min_required_tasks: 2
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3408EDEC813A8F4E"
+					table_id: 811148776139948697L
+					type: "loot"
+				}
+				{
+					id: "0199DD19FC93D54E"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Вооружение лучшими боеприпасами&r"
+			tasks: [
+				{
+					id: "47F0E3DDC5988E35"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "tacz:50ae"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "558960CB15510081"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "tacz:12g"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "657C31E7EEABE035"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "tacz:762x39"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lЗаблокировано и загружено"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fСоздайте &7Увеличенный магазин 1-го уровня&r, чтобы придать вашему оружию немного больше возможностей. Сделав несколько дополнительных выстрелов, вы будете лучше подготовлены к длительным стычкам. &aИдеально подходит для того, чтобы дольше оставаться в бою!&r"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:light_extended_mag_1"
+				}
+			}
+			id: "08E179049C5CB3BA"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "70214A95275BD453"
+					table_id: 3466793131357567242L
+					type: "random"
+				}
+				{
+					id: "01513B4E811473B5"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Больше патронов, меньше перезарядок."
+			tasks: [
+				{
+					id: "10BCD2CFD97DD9C2"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sniper_extended_mag_1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0717FFA793200F97"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:extended_mag_1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6ECDF6BCDE19B37F"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:light_extended_mag_1"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&lРасширенный магазин I"
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["08E179049C5CB3BA"]
+			description: ["&fОбновите &eTier 2 Extended Mag&r, чтобы получить еще большую огневую мощь. Благодаря большей емкости вы будете тратить меньше времени на перезарядку и больше времени на доминирование. &aПринесите огневую мощь!&r"]
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:light_extended_mag_2"
+				}
+			}
+			id: "1903202B8FD81D61"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05226C82C65C4B65"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "45D5014720D66375"
+					table_id: 811148776139948697L
+					type: "random"
+				}
+				{
+					id: "573EFCBD30C70E90"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Для этих напряженных сражений."
+			tasks: [
+				{
+					id: "4B8920AE24033745"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sniper_extended_mag_2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "3C5DF8D511BC81B2"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:extended_mag_2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0F6054E73AA7983A"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:light_extended_mag_2"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&3&lРасширенный магазин II"
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1903202B8FD81D61"]
+			description: ["&fСоздайте &bTier 3 Extended Mag&r, лучший журнал для тех, кто требует самого лучшего. Благодаря высочайшей мощности вас будет невозможно остановить в любом сражении. &aOutlast и превосходящее оружие!&r"]
+			icon: {
+				Count: 1
+				id: "tacz:attachment"
+				tag: {
+					AttachmentId: "tacz:extended_mag_3"
+				}
+			}
+			id: "3ABD7B4F232A6EA3"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B8E5A229C7ADB2A"
+					table_id: 2296090824792677534L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "334D4B919CDF98DB"
+					table_id: 3466793131357567242L
+					type: "loot"
+				}
+				{
+					id: "7AD35A4140D8616E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			subtitle: "&7Максимум раундов для максимального эффекта."
+			tasks: [
+				{
+					id: "439BA934FE6E0804"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:light_extended_mag_3"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "34F78A40B86397D8"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:sniper_extended_mag_3"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "7AA71F90ADE384D7"
+					item: {
+						Count: 1
+						id: "tacz:attachment"
+						tag: {
+							AttachmentId: "tacz:extended_mag_3"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&5&lРасширенный магазин III"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2800DFF9AFBEFE42"]
+			description: ["&fВы уничтожили &c100 врагов&r. Путь убийцы начался. Так держать, воин!"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "20135FF034291E5C"
+			invisible: true
+			rewards: [{
+				id: "168D422FF77E1535"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "&7Небольшой шаг в мир боя."
+			tasks: [{
+				id: "4C653D3F7D0BB375"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 100
+			}]
+			title: "&lУбийца-новичок"
+			x: -4.2602040816326365d
+			y: -0.0051020408163253705d
+		}
+		{
+			dependencies: ["20135FF034291E5C"]
+			description: ["&fСовершив &c500 убийств&r, вы оставите свой след. Пусть враги трепещут при вашем приближении."]
+			icon: {
+				Count: 1
+				id: "blue_skies:different_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2309CA18898C6D84"
+			invisible: true
+			rewards: [{
+				id: "1BA4A658DB794C36"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "&7Внутри нарастает азарт битвы."
+			tasks: [{
+				id: "7FAEF08E9FF4965A"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 500
+			}]
+			title: "&4Кровавый Охотник"
+			x: -3.7499999999999787d
+			y: 0.5051020408163254d
+		}
+		{
+			dependencies: ["2309CA18898C6D84"]
+			description: ["&fВы убили &c1000 врагов&r, став настоящей силой на поле битвы. Кто посмеет встать у тебя на пути?"]
+			icon: "cataclysm:dying_ember"
+			id: "3B23524AEA699E39"
+			invisible: true
+			rewards: [{
+				id: "6F55B3E960749E1D"
+				type: "xp"
+				xp: 7
+			}]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "&7Ваша репутация распространяется повсюду."
+			tasks: [{
+				id: "1B303CB143A4FA70"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 1000
+			}]
+			title: "&4&lНесущий смерть"
+			x: -4.260204081632658d
+			y: 1.0153061224489761d
+		}
+		{
+			dependencies: ["3B23524AEA699E39"]
+			description: ["&fС &c5000 убийств&r вы — живая легенда. Сейчас мало кто сможет бросить вызов вашей силе."]
+			icon: "cataclysm:burning_ashes"
+			id: "1D537CE3BDBBE5C1"
+			invisible: true
+			rewards: [{
+				id: "4D6932B90F6DAE2C"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "&7Целые армии падут перед вами."
+			tasks: [{
+				id: "5774CD887496CCE9"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 5000
+			}]
+			title: "&6&lВоеначальник"
+			x: -3.75d
+			y: 1.525510204081634d
+		}
+		{
+			dependencies: ["1D537CE3BDBBE5C1"]
+			description: ["&fВы достигли &c10 000 убийств&r! Вселенная познает страх при упоминании твоего имени. Ты величайший убийца."]
+			icon: "cataclysm:altar_of_fire"
+			id: "3F9196A462AEE7DA"
+			invisible: true
+			rewards: [
+				{
+					id: "4BA7E38B5B958F9B"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4229E2B70EF4E21C"
+					table_id: 2296090824792677534L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E7075D11C60E3BD"
+					table_id: 1841724982511844555L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5751BEF8404335A0"
+					table_id: 3571138643833699816L
+					type: "random"
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "&7Непревзойденный и неудержимый."
+			tasks: [{
+				id: "355A67750B9C2283"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 10000
+			}]
+			title: "&5&lРазрушитель миров"
+			x: -4.260204081632658d
+			y: 2.0357142857142847d
+		}
+		{
+			dependencies: ["7A8493FC492E0B39"]
+			description: ["&fПоднимите свою &bвинтовку&r на новый уровень. Улучшайте мощь, чтобы получить максимальное преимущество на поле битвы."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 12
+					GunFireMode: "SEMI"
+					GunId: "lradd:txc"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "166BCEA372B5706D"
+			min_required_tasks: 1
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "44E87B378F490569"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "544B021085A55469"
+					table_id: 1841724982511844555L
+					type: "random"
+				}
+				{
+					id: "5331A9C7496A74E0"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			subtitle: "&7Максимизируйте свою огневую мощь."
+			tasks: [
+				{
+					id: "2458FF766A605F9A"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 0
+							GunFireMode: "AUTO"
+							GunId: "lradd:sa58"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2B1C13D586D5A885"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 12
+							GunFireMode: "SEMI"
+							GunId: "lradd:txc"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "0E769127D264C548"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 6
+							GunFireMode: "SEMI"
+							GunId: "tacz:mk14"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "72720DFD0B72E773"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 5
+							GunFireMode: "AUTO"
+							GunId: "lradd:qbz191_em"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "2451013A42645AC5"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 20
+							GunFireMode: "SEMI"
+							GunId: "tacz:scar_h"
+							HasBulletInBarrel: 1b
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "&6&lТактическое преимущество"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["166BCEA372B5706D"]
+			description: ["&fСоздайте &bBAM4&r, оружие, которое словно взято прямо из вашего любимого аниме. Легкая, быстрая и стильная — эта винтовка является воплощением футуристической огневой мощи. &aГотовы ли вы к следующему уровню?&r"]
+			hide_until_deps_complete: true
+			id: "569BF855E9056893"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33A47E79D966C08D"
+					table_id: 1841724982511844555L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "68950989DDBE1FDA"
+					table_id: 2296090824792677534L
+					type: "loot"
+				}
+				{
+					id: "3EB5C54FA726008D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "&7Прямо из другого мира..."
+			tasks: [{
+				id: "758C251B06483D12"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 19
+						GunFireMode: "BURST"
+						GunId: "lradd:bam4"
+						HasBulletInBarrel: 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "&6&lАниме Реальность"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["010770636DB21DF4"]
+			description: ["&fСоберите автоматический дробовик &cAA12&r и почувствуйте разрушительную силу этого зверя ближнего боя. Благодаря высокой скорострельности перед вами ничто не имеет шансов. &aПроложите свой путь к победе!&r"]
+			hide_until_deps_complete: true
+			id: "1A55663F9F0BBAE8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1AD90D4D8ABFE946"
+					table_id: 1841724982511844555L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14871D6B856BCE12"
+					table_id: 2296090824792677534L
+					type: "loot"
+				}
+				{
+					id: "2DC9405C8BD0596E"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Невероятные впечатления от дробовика..."
+			tasks: [{
+				id: "3A58D1EF677821EE"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 8
+						GunFireMode: "SEMI"
+						GunId: "tacz:aa12"
+						HasBulletInBarrel: 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "&6&lПолная автоматическая ярость"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["634BE36EC9B3AB87"]
+			description: ["&fСоздайте легендарный &cRPK&r и владейте мощью одного из самых мощных ручных пулеметов. Непревзойденная огневая мощь, способная снести все на вашем пути. Готовы выпустить пули?&r"]
+			hide_until_deps_complete: true
+			id: "74A2D570F4625324"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6267395C5BB0528D"
+					table_id: 1841724982511844555L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "44393297AAC898EC"
+					table_id: 2296090824792677534L
+					type: "loot"
+				}
+				{
+					id: "33789F32AE217A1F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			size: 0.7d
+			subtitle: "&7Непреодолимая сила в твоих руках..."
+			tasks: [{
+				id: "12643AEE5AE636DF"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 13
+						GunFireMode: "AUTO"
+						GunId: "tacz:rpk"
+						HasBulletInBarrel: 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "&6&lЗверь на свободе"
+			x: 0.0d
+			y: 3.85d
+		}
+		{
+			dependencies: [
+				"2800DFF9AFBEFE42"
+				"457110F50A907BF8"
+			]
+			description: ["&fAdd &9scopes&r, &csilencers&r, and more! Every mod turns your weapon into a &7perfect tool&r for any job. &bCustomize&r, &areload&r, &ffire!&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:ammo_box"
+				tag: {
+					AllTypeCreative: 1b
+				}
+			}
+			id: "3718A551E57477A2"
+			shape: "hexagon"
+			subtitle: "&7Точная настройка каждого выстрела, идеальное каждое убийство...&r"
+			tasks: [{
+				id: "1232E3B0FE62E2A8"
+				type: "checkmark"
+			}]
+			title: "&6&lОбновите свой арсенал&r"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3718A551E57477A2"]
+			description: ["&fСоздайте &7Железный ящик для боеприпасов&r, чтобы держать боеприпасы в порядке и наготове. Идеально подходит для хранения патронов, не занимая ценного места в инвентаре. &aОснова любого серьёзного арсенала!&r"]
+			hide_until_deps_complete: true
+			id: "0A4CE5346CD440A6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4002C9B4EBC6D554"
+					table_id: 811148776139948697L
+					type: "choice"
+				}
+				{
+					id: "62B8B335AAB3FC12"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "&7Основы настоящего арсенала."
+			tasks: [{
+				id: "35F9F1BA70FF15E2"
+				item: {
+					Count: 1
+					id: "tacz:ammo_box"
+					tag: {
+						Level: 0
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0A4CE5346CD440A6"]
+			description: ["&fСоздайте &eЗолотой ящик для боеприпасов&r, чтобы хранить еще больше боеприпасов повышенной прочности. С этой коробкой вы сможете носить с собой больше и перезаряжаться быстрее. &aКаждый выстрел имеет значение!&r"]
+			id: "3CBF7DF041707ED0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "469DBCA363B2092A"
+					table_id: 2296090824792677534L
+					type: "choice"
+				}
+				{
+					id: "2548298836E1236B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			subtitle: "&7Обновите свое хранилище стильно."
+			tasks: [{
+				id: "7BA7F104DE25FCA7"
+				item: {
+					Count: 1
+					id: "tacz:ammo_box"
+					tag: {
+						Level: 1
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3CBF7DF041707ED0"]
+			description: ["&fСоздайте &bЯщик для боеприпасов с бриллиантами&r, идеальный выбор для хранения максимального количества патронов. Держите под рукой лучшие боеприпасы для сражений с высокими ставками. &aОденьтесь как профессионал!&r"]
+			id: "284B1CB0624077D4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2B50222E984845A4"
+					table_id: 2296090824792677534L
+					type: "loot"
+				}
+				{
+					id: "3EA1E1BE5462287F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			subtitle: "&7Первоклассное хранилище для серьезных бойцов."
+			tasks: [{
+				id: "2512EA04999CA332"
+				item: {
+					Count: 1
+					id: "tacz:ammo_box"
+					tag: {
+						Level: 2
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.5d
+		}
+	]
+	title: "&f Абсолютный арсенал"
+}

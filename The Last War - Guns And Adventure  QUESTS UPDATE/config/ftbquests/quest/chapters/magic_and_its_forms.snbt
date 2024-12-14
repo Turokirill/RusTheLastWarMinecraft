@@ -1,0 +1,556 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "magic_and_its_forms"
+	group: "31FB61CF8D7636BB"
+	icon: "ars_nouveau:jar_of_light"
+	id: "142A396215524AE7"
+	images: [
+		{
+			height: 2.0d
+			image: "minecraft:textures/gui/quests/0.png"
+			rotation: 0.0d
+			width: 3.5555555555555554d
+			x: 7.105427357601002E-15d
+			y: -1.7999999999999972d
+		}
+		{
+			dependency: "5B690ADAF9FB6947"
+			height: 1.0d
+			image: "minecraft:textures/gui/quests/8.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependency: "5B690ADAF9FB6947"
+			height: 1.0d
+			image: "minecraft:textures/gui/quests/5.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 5.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["09C93F4C67945379"]
+			dependency_requirement: "one_started"
+			description: ["&fДобро пожаловать в &bArs Nouveau&r, где тайные знания сочетаются с творчеством. Научитесь создавать &nкниги заклинаний&r, направлять магическую силу и овладевать искусством &bавтоматизации&r и &bволшебства&r. Тайные искусства огромны, и это только начало вашего волшебного путешествия. &aГотовы ли вы исследовать тайны магии?&r"]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:worn_notebook"
+			id: "5B690ADAF9FB6947"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37DBF77654E06448"
+				table_id: 331839253138532122L
+				type: "random"
+			}]
+			subtitle: "&7Обнимите внутреннюю магию..."
+			tasks: [{
+				id: "1E1B7A24E3DF23DF"
+				type: "checkmark"
+			}]
+			title: "&b&lПробудить тайную силу&r"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5B690ADAF9FB6947"]
+			description: ["&f&bКнига заклинаний для новичков&r — ваш путь к изучению магии в Ars Nouveau. Создайте его, чтобы начать создавать глифы 1-го уровня и исследовать мир создания заклинаний. Затем используйте &bТаблицу писца&r, чтобы разблокировать и просмотреть новые требования к глифам для ваших заклинаний. Наконец, &bЛодоходный жезл&r поможет вам обнаружить волшебных существ и аметист, спрятанных за блоками. Приготовьтесь исследовать глубины волшебства и открытий! &aСоздайте свои инструменты и начинайте!&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:novice_spell_book"
+			id: "2A3B4B9E2C0F4B53"
+			rewards: [
+				{
+					id: "62BCF8C267A7D128"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "1754B3BD9F193175"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+			]
+			subtitle: "&7Ваше путешествие в магию начинается..."
+			tasks: [
+				{
+					id: "042A66AC47ADCCB0"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+				{
+					id: "5CB571523A131F73"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+				{
+					id: "0F314E0456350451"
+					item: {
+						Count: 1
+						id: "ars_nouveau:dowsing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&b&lНачинающее колдовство&r"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2A3B4B9E2C0F4B53"]
+			description: ["&f&6Камера пропитки&r – это ваш путь к созданию мощных магических артефактов. Объединив это с &5Чародейскими пьедесталами&r и используя &5Чародейский аппарат&r, вы можете создавать зачарованные предметы, которые задействуют саму суть маны и ресурсов. Установите свою камеру на пьедесталы и раскройте весь ее потенциал. Независимо от того, создаете ли вы защиту или силу, эта установка гарантирует, что вы откроете свою тайную мощь."]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "3598FD7CB7015EF6"
+			rewards: [
+				{
+					id: "0735347E60BD3971"
+					type: "xp"
+					xp: 24
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7658F9CE8B77D8F9"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+			]
+			subtitle: "&7С легкостью создавайте магические предметы...&r"
+			tasks: [
+				{
+					id: "22D28ECD3A5773F7"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					id: "7C34D711B1E0E161"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "7C9891026D742833"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "24996E04338F2BD2"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+			]
+			title: "&6&lМощь ждет&r"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3598FD7CB7015EF6"]
+			description: ["&f&2Семя Магического Цветения&r — это ваша отправная точка в волшебство &5&nArs Nouveau&r. Посадите семя, вырастите свой Магический Цветок и соберите волокна для создания магических предметов. Соедините это с &dSource Gem&r, ядром крафта, основанного на мане, и вы готовы разблокировать мощные заклинания и инструменты. &aНачинается новое волшебное путешествие!&r"]
+			icon: "ars_nouveau:source_gem"
+			id: "7ED601E095072DAE"
+			rewards: [
+				{
+					id: "2BB58228B47DB9F3"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "6BAFC3299421ACF0"
+					item: "ars_nouveau:potion_diffuser"
+					type: "item"
+				}
+			]
+			subtitle: "&7Волшебное семя для новых начинаний...&r"
+			tasks: [
+				{
+					id: "50841DE4CE4EE673"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "38407517617B561C"
+					item: "ars_nouveau:magebloom_crop"
+					type: "item"
+				}
+			]
+			title: "&2&lПробуждение Мага Блума&r"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7ED601E095072DAE"]
+			description: ["&fСоздайте &5волокон магического цвета&r для создания волшебных мантий. Идеально подходит для придания силы вашим нарядам. &aГотовы ли вы облачиться в новый облик магии?&r"]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:arcanist_hood"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3ACFC30291D8F9F0"
+			rewards: [
+				{
+					id: "5FA837C2DAFC5AAC"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F796331EB27BB7C"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+			]
+			subtitle: "&7Новый наряд мага...&r"
+			tasks: [
+				{
+					id: "1B61CDA42A206747"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+				{
+					id: "2FDC81F3466AB995"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:mage_armors"
+						}
+					}
+					title: "Магические доспехи"
+					type: "item"
+				}
+			]
+			title: "&d&lОдеяния силы мага&r"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7ED601E095072DAE"]
+			description: ["&fИспользуйте &dТаблицу изменений&r, чтобы наполнить свое магическое снаряжение специальными нитями. От улучшения способностей до добавления защиты — возможности безграничны. &aДавайте добавим немного волшебства в ваше снаряжение!&r"]
+			icon: "ars_nouveau:alteration_table"
+			id: "493770EA521F20DA"
+			rewards: [
+				{
+					id: "0DF42021C8AE6EDB"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "35A1BED7E6256A45"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "549BE5D1EFD6C6C9"
+					item: "ars_nouveau:blank_thread"
+					type: "item"
+				}
+			]
+			subtitle: "&7Измените свое волшебное снаряжение...&r"
+			tasks: [
+				{
+					id: "3AFD70C108CEA7A3"
+					item: "ars_nouveau:alteration_table"
+					type: "item"
+				}
+				{
+					id: "7190148D64C9AC48"
+					item: "ars_nouveau:blank_thread"
+					type: "item"
+				}
+				{
+					id: "5C62882CE3B43D31"
+					item: "ars_nouveau:blank_parchment"
+					type: "item"
+				}
+			]
+			title: "&d&lНить судьбы&r"
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7ED601E095072DAE"]
+			description: ["&fИспользуйте &9Свиток варпа&r для быстрой телепортации обратно в безопасное место. Никогда больше не попадайте в опасную ситуацию. &aВыйдите одним щелчком мыши!&r"]
+			id: "67373F0115BF3E1D"
+			rewards: [
+				{
+					id: "70A4804BEE395E17"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BA18D98C1BCC9DA"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+			]
+			subtitle: "&7Возврат в одно мгновение...&r"
+			tasks: [{
+				id: "709FD72EC7C1D5BA"
+				item: {
+					Count: 1
+					id: "ars_nouveau:warp_scroll"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&9&lБыстрый побег&r"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7ED601E095072DAE"
+				"493770EA521F20DA"
+			]
+			dependency_requirement: "one_completed"
+			description: ["&fСоздайте &6Чародейское оружие&r, чтобы улучшить свои заклинания. Независимо от того, владеете ли вы посохом или зачарованным оружием, эти инструменты созданы для повышения вашего магического потенциала. Наполните их мощными символами и возьмите под свой контроль тайные силы. От произнесения заклинаний до стрельбы зачарованными снарядами — выбор за вами. &aРаскройте мощь магии!&r"]
+			id: "3B457F055BF81163"
+			rewards: [
+				{
+					id: "0AF663D882B22840"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5BAC2DFD04BDE1DE"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+			]
+			subtitle: "&7Раскройте весь потенциал магии...&r"
+			tasks: [{
+				id: "63ECECBFA7242E21"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:mage_weapons"
+					}
+				}
+				title: "Магическое оружие"
+				type: "item"
+			}]
+			title: "&6&lМагический арсенал&r"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5B690ADAF9FB6947"]
+			description: ["&fВ &6Ars Nouveau&r фрукты не только для еды, они волшебны! Собирайте эти уникальные фрукты, чтобы использовать их уникальную силу. &bИсходные ягоды&r восстанавливают магию, &cПылающие ягоды&r могут разжечь ваше пламя, и это еще не все, что можно открыть. Кто сказал, что магия не может быть вкусной? &aПриготовьтесь насладиться тайнами!&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "468450AB5EF5C830"
+			rewards: [
+				{
+					id: "379D016308306958"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32AB9B80DCDA1B82"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+				{
+					id: "38EEE3D8DF463179"
+					item: "ars_elemental:water_upstream"
+					type: "item"
+				}
+			]
+			subtitle: "&7Откройте для себя мистическую силу фруктов...&r"
+			tasks: [
+				{
+					id: "0D615CE4BB86F614"
+					item: "ars_nouveau:bombegranate_pod"
+					type: "item"
+				}
+				{
+					id: "5A9257343811C0E1"
+					item: "ars_nouveau:frostaya_pod"
+					type: "item"
+				}
+				{
+					id: "1E0B743DCF7E1AD6"
+					item: "ars_nouveau:bastion_pod"
+					type: "item"
+				}
+				{
+					id: "5E0DD06BF2270AA8"
+					item: "ars_nouveau:mendosteen_pod"
+					type: "item"
+				}
+			]
+			title: "&6&lПопробуйте волшебство!&r"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7ED601E095072DAE"]
+			description: ["&f&5Ритуальная жаровня&r необходима для проведения &6мощных ритуалов&r и &6призывов&r. Используйте тайную энергию, чтобы разблокировать древние силы и призывать существ извне. &aДа начнутся ритуалы!&r"]
+			id: "43D0C6D2F518263A"
+			rewards: [
+				{
+					id: "3E2C01E0D5E28A33"
+					type: "xp"
+					xp: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "56F51C3582FE4DAF"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+				{
+					id: "378B325EEAE8EEEA"
+					item: "ars_nouveau:ritual_binding"
+					type: "item"
+				}
+				{
+					id: "557370DA39448CB1"
+					item: "ars_nouveau:ritual_sunrise"
+					type: "item"
+				}
+			]
+			subtitle: "&7Подпитывайте внутреннюю магию..."
+			tasks: [{
+				id: "79ABADB257B1386F"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "&5&lЧародейское пламя&r"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["43D0C6D2F518263A"]
+			description: ["&f&cДикая Химера&r — грозный босс, доступный после вызова. Победа над этим существом вознаграждает вас &cWilden Tribute&r, свидетельством вашей храбрости и силы. Битва расширит ваши возможности, и победит только сильнейший, не так ли?&r"]
+			id: "693EDF76830F77E9"
+			rewards: [
+				{
+					id: "1307C990E08F44D7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C3518E97462253D"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+			]
+			subtitle: "&7Испытание силы и мужества..."
+			tasks: [{
+				id: "626793D372EE114C"
+				item: "ars_nouveau:wilden_tribute"
+				type: "item"
+			}]
+			title: "&4&lИспытание доблести&r"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["693EDF76830F77E9"]
+			description: ["&f&6Знак Мастерства&r означает, что родился настоящий мастер тайной магии. С этой эмблемой ваше магическое мастерство не имеет себе равных. &aСтаньте настоящим мастером заклинаний и символов!&r"]
+			id: "2B567682BE970674"
+			rewards: [
+				{
+					id: "083B02A2F0CB454F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "491F213C42D29A95"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+				{
+					id: "3012554A38786DFF"
+					item: "ars_nouveau:ring_of_greater_discount"
+					type: "item"
+				}
+				{
+					id: "066956D64D6ED7AF"
+					item: "ars_elemental:magma_upstream"
+					type: "item"
+				}
+			]
+			subtitle: "&7Символ тайного совершенства..."
+			tasks: [{
+				id: "5F9278077A2B297E"
+				item: "ars_elemental:mark_of_mastery"
+				type: "item"
+			}]
+			title: "&6&lЭмблема Магистра&r"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2A3B4B9E2C0F4B53"]
+			description: ["&fВ Ars Nouveau &dSourcelinks&r генерирует &bSource&r, основную энергию для крафта и произнесения заклинаний. Используйте &dSource Jar&r для хранения этой энергии и &6Dominion Wand&r для связи устройств производства Source, оптимизируя вашу магическую сеть. Выберите лучший исходный канал для своих нужд и обеспечьте плавный поток энергии!&r"]
+			icon: "ars_nouveau:source_jar"
+			id: "302A69803546F94C"
+			rewards: [
+				{
+					id: "77955BE578FB7340"
+					type: "xp"
+					xp: 12
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1FFD947ECB3E8B76"
+					table_id: 4311560389524893448L
+					type: "random"
+				}
+			]
+			subtitle: "&7Направьте силу Источника..."
+			tasks: [
+				{
+					id: "01BB8C58D2DDE0A8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:sourcelinks"
+						}
+					}
+					title: "Ссылки на источники"
+					type: "item"
+				}
+				{
+					id: "6BDD8187D09E2F2C"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "6E818A51EFEC8639"
+					item: {
+						Count: 1
+						id: "ars_nouveau:dominion_wand"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "&d&lВладение источником&r"
+			x: -1.0d
+			y: 2.0d
+		}
+	]
+	title: "&7 Магия \\&\\ её формы"
+}

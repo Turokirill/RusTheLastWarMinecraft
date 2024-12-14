@@ -1,0 +1,1037 @@
+{
+	autofocus_id: "390A371FA8F483A8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energetics"
+	group: "29555EBAB4C2D307"
+	icon: "ae2:meteorite_compass"
+	id: "6E163D8E060CDEB1"
+	images: [
+		{
+			click: "#66F5394FD607D206"
+			height: 1.0d
+			image: "more_beautiful_torches:block/jukebox_redstone_torch_off"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependency: "62E3F33560B69F21"
+			height: 1.0d
+			image: "more_beautiful_torches:block/jukebox_redstone_torch"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["66F5394FD607D206"]
+			dependency_requirement: "one_started"
+			description: ["&fЗагадочный &8метеорит&r разбился где-то в мире, и он хранит тайны, превосходящие ваше воображение. Внутри вы можете найти странные &dcrystals&r и запертый ящик. Используйте компас, чтобы выследить его, проникнуть внутрь и обнаружить спрятанные внутри сокровища. &aГотовы ли вы раскопать неизведанное?&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "ae2:sky_stone_block"
+			id: "62E3F33560B69F21"
+			rewards: [
+				{
+					id: "07E479993B546036"
+					type: "xp"
+					xp: 3
+				}
+				{
+					count: 4
+					id: "7FBFC40BE822F902"
+					item: "ae2:certus_quartz_crystal"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Найди инопланетный артефакт..."
+			tasks: [{
+				icon: "ae2:sky_stone_block"
+				id: "0B778F810A797381"
+				structure: "ae2:meteorite"
+				title: "Найдите метеорит"
+				type: "structure"
+			}]
+			title: "&7&lОхота на метеорит&r"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09C93F4C67945379"]
+			dependency_requirement: "one_started"
+			description: ["&fОткройте для себя футуристический мир &7Applied Energistics 2&r, где вы можете с легкостью оцифровывать и хранить огромное количество предметов. Начните с создания своего первого привода &7ME Drive&r и раскройте потенциал продвинутой автоматизации. &aБудущее хранения данных в ваших руках!&r"]
+			hide_until_deps_complete: true
+			icon: "ae2:meteorite_compass"
+			id: "66F5394FD607D206"
+			subtitle: "&7Переопределено хранилище..."
+			tasks: [
+				{
+					id: "04D76B25BCC4BD5F"
+					type: "checkmark"
+				}
+				{
+					id: "63B5442B381E4943"
+					item: "ae2:meteorite_compass"
+					type: "item"
+				}
+			]
+			title: "&7&lИнопланетные технологии&r"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["62E3F33560B69F21"]
+			description: ["&fThe &9Inscriber(Писатель)&r — это ваш путь к освоению &7продвинутых схем&r в прикладной энергетике. С его помощью вы можете создавать необходимые процессоры для питания вашей сети ME. &aИспользуйте печатную машину для создания &eинженерных, логических и вычислительных процессоров&r и выведите свои технологии на новый уровень!&r Время модернизировать ваши системы!&r"]
+			hide_until_deps_complete: true
+			icon: "ae2:mysterious_cube"
+			id: "390A371FA8F483A8"
+			rewards: [
+				{
+					id: "586DC57D4E909052"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 5
+					id: "4676A68CF7914CA5"
+					item: "ae2:silicon"
+					random_bonus: 3
+					type: "item"
+				}
+			]
+			subtitle: "&7Взломайте код сложных схем...&r"
+			tasks: [
+				{
+					id: "073773383BBAAB9C"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "0992C65A4BC4A2FF"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+				{
+					id: "27C2DE173072FF62"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "1AF5EB804DEBD6E4"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					icon: "ae2:mysterious_cube"
+					id: "41CC212EBDFE13CD"
+					observe_type: 0
+					timer: 0L
+					title: "Наблюдайте за загадочным кубом"
+					to_observe: "ae2:mysterious_cube"
+					type: "observation"
+				}
+			]
+			title: "&9&lМастер рисования&r"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["390A371FA8F483A8"]
+			dependency_requirement: "one_started"
+			description: ["&f&7Inscriber&r — это важный инструмент для создания сложных компонентов в &bApplied Energistics 2&r. &aИспользуйте Inscriber для развития своих технологий!&r"]
+			icon: "ae2:inscriber"
+			id: "0F55904CA61A6B2C"
+			rewards: [
+				{
+					id: "7987AFEDCD324DF7"
+					type: "xp"
+					xp: 8
+				}
+				{
+					count: 8
+					id: "03F828CE42E937D8"
+					item: "ae2:silicon"
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			subtitle: "&7Создание компонентов будущего...&r"
+			tasks: [
+				{
+					id: "5E77BB1DDC66669D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:all_certus_quartz"
+						}
+					}
+					title: "Любой #ae2:all_certus_quartz"
+					type: "item"
+				}
+				{
+					id: "287587AC6FAFAFDA"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+				{
+					id: "77C96C70AC51B86E"
+					item: "ae2:crank"
+					type: "item"
+				}
+				{
+					id: "3E5947E0B009EFCC"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					id: "1805166C13CE99C9"
+					item: "ae2:fluix_crystal"
+					type: "item"
+				}
+			]
+			title: "&7&lДвижение вперед&r"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0F55904CA61A6B2C"]
+			dependency_requirement: "one_started"
+			description: ["&f&6Вибрационная камера&r использует топливо для выработки энергии для вашей ME-системы, а &6Резонансный генератор&r обеспечивает пассивную энергию, хотя для каждой системы машины допускается только один. Создайте эти незаменимые генераторы, чтобы обеспечить питание вашей сети прикладной энергетики. &aОживите свою систему!&r"]
+			icon: "ae2:vibration_chamber"
+			id: "517E8C3A556B9087"
+			rewards: [
+				{
+					id: "1509CB56D6F54C9B"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5BBBD2E9A4E4FFD1"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					count: 3
+					id: "605E115FF9470FA9"
+					item: "ae2:fluix_crystal"
+					random_bonus: 5
+					type: "item"
+				}
+			]
+			subtitle: "&7Используйте энергию мира...&r"
+			tasks: [
+				{
+					id: "6F0DA05E6C4CCA43"
+					item: "ae2:vibration_chamber"
+					type: "item"
+				}
+				{
+					id: "5DE1384E9F235B19"
+					item: "ae2:crystal_resonance_generator"
+					type: "item"
+				}
+			]
+			title: "&6&lИсточники питания&r"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F55904CA61A6B2C"]
+			dependency_requirement: "one_started"
+			description: ["&f&6Зарядное устройство&r необходимо для поддержания работоспособности ваших инструментов и устройств. Зарядите свой &bУдаленный терминал&r и другие инструменты, чтобы они были готовы к использованию в любое время. &aОставайтесь в рабочем состоянии и поддерживайте эффективность вашей сети!&r"]
+			icon: "ae2:charger"
+			id: "5958E4F78A1964E5"
+			rewards: [{
+				id: "09D685C6F8C3FA26"
+				type: "xp"
+				xp: 12
+			}]
+			subtitle: "&7Зарядка инструментов для бесконечной работы...&r"
+			tasks: [
+				{
+					id: "17FB331F5179416D"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "13B86C8198F16056"
+					item: "ae2:guide"
+					type: "item"
+				}
+			]
+			title: "&6&lУвеличение мощности&r"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["517E8C3A556B9087"]
+			dependency_requirement: "one_started"
+			description: ["&f&3Энергетическая ячейка&r аккумулирует и сохраняет энергию для вашей ME-сети. Подключив его к своей системе, вы обеспечите стабильную подачу электроэнергии для всех ваших потребностей в крафте и автоматизации. &aУправляйте своей мощностью как профессионал."]
+			id: "3CE1751DD398A46E"
+			rewards: [
+				{
+					id: "0F309BF63F031866"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "602D8552985CD584"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "14AA07FFC209C250"
+					item: "ae2:fluix_block"
+					random_bonus: 1
+					type: "item"
+				}
+			]
+			subtitle: "&7Используйте силу накопленной энергии..."
+			tasks: [{
+				id: "200D9266FE9FA42B"
+				item: {
+					Count: 1
+					id: "ae2:energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&3&lЭнергетическая ячейка"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3CE1751DD398A46E"]
+			description: ["&f&5Dense Energy Cell&r хранит невероятное количество энергии. Когда ваша система вырастет, вам понадобится способ хранить больше энергии."]
+			id: "1FDA7C2FE17186C0"
+			rewards: [
+				{
+					id: "422B292C5837C402"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "535BF0232EABF9A7"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					count: 3
+					id: "35AFE3033C50B353"
+					item: "ae2:fluix_block"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Увеличьте свою мощь...&r"
+			tasks: [{
+				id: "25330906E6DF39D4"
+				item: {
+					Count: 1
+					id: "ae2:dense_energy_cell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&5&lПлотный энергетический элемент&r"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5958E4F78A1964E5"]
+			description: [
+				"&fС помощью этих компонентов вы можете создать полнофункциональную &9ME Network&r для расширенного хранения предметов. Контроллер &7ME&r управляет всей сетью, а &9Кабели&r соединяют все машины и терминалы. Помните об ограничениях каналов, налагаемых различными типами кабелей, и обязательно используйте &eDense Converted Cables&r для более крупных систем."
+				""
+				"&cВажно:&r Только одно местоположение ME-контроллера в сети!"
+			]
+			icon: "ae2:controller"
+			id: "14E9C0BC36BC84C8"
+			rewards: [
+				{
+					id: "30517F25796D85D8"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A4FBCC0865E5E24"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					count: 6
+					id: "41EE583FD07101CE"
+					item: "ae2:fluix_smart_dense_cable"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Подключение и управление вашей системой хранения данных...&r"
+			tasks: [
+				{
+					id: "620768E4EB4164BA"
+					item: "ae2:terminal"
+					type: "item"
+				}
+				{
+					id: "147D0CBE82F8C1B9"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "73F138B09E993618"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "74C3654B9B15F4CA"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "5A5D4DF5DD15321D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:p2p_attunements/me_p2p_tunnel"
+						}
+					}
+					title: "Любой #ae2:p2p_attunements/me_p2p_tunnel"
+					type: "item"
+				}
+				{
+					id: "47B91EF905295650"
+					item: "ae2:controller"
+					type: "item"
+				}
+			]
+			title: "&6&lСоздание сети&r"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14E9C0BC36BC84C8"]
+			description: ["&fТерминал для крафта &bME&r выводит вашу сеть ME на новый уровень, позволяя вам создавать предметы прямо из вашего хранилища! Получите доступ ко всем хранящимся предметам и с легкостью создайте их на месте. &aГотовы создать что-нибудь, не выходя из терминала?&r"]
+			id: "0D17B80F1D844093"
+			optional: true
+			rewards: [
+				{
+					id: "368559F5CD12C80D"
+					type: "xp"
+					xp: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "142CA154CABA2913"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Превратите свое хранилище в мастерскую для творчества...&r"
+			tasks: [{
+				id: "5D7A91D0CB5551D7"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			title: "&b&lНа кончиках ваших пальцев&r"
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["14E9C0BC36BC84C8"]
+			description: ["&f&7Cell Workbench&r позволяет обновлять и точно настраивать сетевые компоненты. Используйте его, чтобы модифицировать свои ячейки хранения и улучшить их емкость и функциональность. С помощью этого инструмента вы сможете довести свою ME-систему до предела! &aГотовы ли вы улучшить свое цифровое хранилище?&r"]
+			icon: "ae2:cell_workbench"
+			id: "644A06DA8F26138F"
+			rewards: [
+				{
+					id: "581D27412A721362"
+					type: "xp"
+					xp: 20
+				}
+				{
+					exclude_from_claim_all: true
+					id: "203D0BB0C7343BA8"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Оптимизируйте сетевые компоненты...&r"
+			tasks: [
+				{
+					id: "4BCBC272A19D7C5A"
+					item: "ae2:cell_workbench"
+					type: "item"
+				}
+				{
+					id: "168DD938DF0185CE"
+					item: "ae2:basic_card"
+					type: "item"
+				}
+				{
+					id: "130B662326763FFF"
+					item: "ae2:advanced_card"
+					type: "item"
+				}
+			]
+			title: "&7&lОбновление Cell Workbench&r"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14E9C0BC36BC84C8"]
+			description: ["&fThe &8ME Interface&r — это ключ к быстрому перемещению объектов в вашу сеть и из нее. Если вам нужно &aимпортировать&r или &aэкспортировать&r блоки и предметы, интерфейс с легкостью справится с этим, гарантируя, что ваш инвентарь останется организованным и автоматизированным."]
+			icon: "ae2:cable_interface"
+			id: "662F223C6C78B165"
+			rewards: [
+				{
+					id: "2023026C7E0DA0EA"
+					type: "xp"
+					xp: 8
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66AE6C059A25060E"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Оптимизируйте управление запасами...&r"
+			tasks: [{
+				id: "63D60A2EFC231EFB"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:interface"
+					}
+				}
+				title: "Любой #ae2:интерфейс"
+				type: "item"
+			}]
+			title: "&3&lЭффективные переводы&r"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["14E9C0BC36BC84C8"]
+			description: ["&f&8Плоскость формирования&r размещает блоки или сбрасывает предметы в мир, а &8Плоскость аннигиляции&r удаляет блоки или собирает предметы. Хотите превратить свои запасы в часть вашей сети ME? Используйте &9Шину хранения&r, чтобы соединить сундуки, печи или машины и эффективно управлять их содержимым. &aОвладейте мощью манипуляций с блоками!&r"]
+			icon: "ae2:storage_bus"
+			id: "3DEED57098EC0185"
+			rewards: [
+				{
+					id: "095EC808B6CED8F3"
+					type: "xp"
+					xp: 18
+				}
+				{
+					exclude_from_claim_all: true
+					id: "231001FFAF2BDD92"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Легко управляйте потоком материи...&r"
+			tasks: [
+				{
+					id: "3233EBDEFCEBC07E"
+					item: "ae2:formation_plane"
+					type: "item"
+				}
+				{
+					id: "62399270743E4EE6"
+					item: "ae2:annihilation_plane"
+					type: "item"
+				}
+				{
+					id: "10DA80A2D4233493"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+			]
+			title: "&8&lМастер материи&r"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["14E9C0BC36BC84C8"]
+			description: ["&fДоступ к вашей сети ME удаленно с помощью &dME беспроводной точки доступа&r. После того, как вы привяжете свой &dБеспроводной терминал&r к этому устройству и зарядите его с помощью &dCharger&r, вы сможете управлять своим хранилищем из любого места в пределах досягаемости! &aПопрощайтесь с кабелями и наслаждайтесь свободой беспроводного доступа!&r"]
+			icon: {
+				Count: 1
+				id: "ae2:wireless_terminal"
+				tag: {
+					accessPoint: {
+						dimension: "minecraft:overworld"
+						pos: [I;
+							35
+							66
+							75
+						]
+					}
+				}
+			}
+			id: "7A3FB3919E7F15F0"
+			rewards: [
+				{
+					id: "096D48BBF11DAC33"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D6FA52A0833E21F"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Оставайтесь на связи, где бы вы ни находились...&r"
+			tasks: [
+				{
+					id: "356FECD75C72D0E1"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					id: "6B31AC1786B87689"
+					item: {
+						Count: 1
+						id: "ae2:wireless_terminal"
+						tag: {
+							accessPoint: {
+								dimension: "minecraft:overworld"
+								pos: [I;
+									35
+									66
+									75
+								]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&d&lБеспроводная свобода&r"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7A3FB3919E7F15F0"]
+			description: ["&f&dБеспроводной терминал&r дает вам возможность работать удаленно с полным доступом к вашей сети ME. Держите его заряженным, привяжите к своей сети, и вы будете готовы к работе, куда бы вас ни привели ваши приключения. &aВсегда оставайтесь на связи, где бы вы ни находились!&r"]
+			id: "0417078431E10BB6"
+			rewards: [
+				{
+					id: "1DE0B91F522D654E"
+					type: "xp"
+					xp: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BE2163A301264FE"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Создавайте на ходу, где угодно!&r"
+			tasks: [{
+				id: "74CBFF028FDBF40F"
+				item: {
+					Count: 1
+					id: "ae2:wireless_crafting_terminal"
+					tag: {
+						accessPoint: {
+							dimension: "minecraft:overworld"
+							pos: [I;
+								35
+								66
+								75
+							]
+						}
+						internalCurrentPower: 3640.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "&d&lУдаленная обработка&r"
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["14E9C0BC36BC84C8"]
+			description: [
+				""
+				"&fУстановите &bКрафтовый процессор&r, сердце вашей системы автокрафта. Объедините &bCrafting Unit&r с &bCo-Processing Unit&r, чтобы с легкостью решать сложные крафтовые задачи. Затем свяжите его с &dPattern Providers&r и &9Molecular Assemblers&r, чтобы автоматизировать ваши рецепты. При правильной настройке вы откроете безграничные возможности. &aВремя позволить машинам делать всю работу!&r"
+				""
+				""
+			]
+			icon: "ae2:blank_pattern"
+			id: "1B0A430F3BC95790"
+			rewards: [
+				{
+					id: "134A60614B2561A1"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BE03FD2156B9E36"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					id: "54B06A18D6DB1450"
+					item: "ae2:spatial_cell_component_16"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Овладейте искусством автопроизводства...&r"
+			tasks: [
+				{
+					id: "5035AD9A213D6DE3"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+				{
+					id: "386EF98C5F655B45"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+				{
+					id: "318077B4EA9D4C60"
+					item: "ae2:pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					id: "596D5F4EC927BDDB"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+				{
+					id: "4EE5257BEE9AAA9C"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "2F3EFF4D4418F13C"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					id: "2C768625DFA4040F"
+					item: "ae2:pattern_access_terminal"
+					type: "item"
+				}
+			]
+			title: "&b&lАвтоматическое мастерство&r"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1B0A430F3BC95790"]
+			dependency_requirement: "one_started"
+			description: ["&f&bМонитор крафта&r позволяет вам просматривать все активные крафтовые задачи, обрабатываемые вашей сетью ME. Следите за каждой операцией и следите за тем, чтобы ничто не замедляло ваш автоматизированный рабочий процесс. &aЭффективность во всей красе!&r"]
+			id: "29F4A251DF88EDB4"
+			rewards: [
+				{
+					id: "0FF3A9F62D476CA9"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05B18C429A85B684"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Будьте в курсе своих творческих процессов!&r"
+			tasks: [{
+				id: "00A50E327536F93F"
+				item: "ae2:crafting_monitor"
+				type: "item"
+			}]
+			title: "&b&lМонитор крафта&r"
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["14E9C0BC36BC84C8"]
+			description: [
+				"&f&5Пространственная привязка&r гарантирует, что подключенные &7куски&r остаются загруженными, поддерживая постоянную активность вашей сети. Между тем, &dMatter Condenser&r позволяет вам распоряжаться огромным количеством ресурсов, превращая их в &9Материйные шары&r или даже создавая неуловимую &6Сингулярность&r, используя огромное количество предметов."
+				""
+			]
+			icon: "ae2:condenser"
+			id: "7313F6FFC5555184"
+			rewards: [
+				{
+					id: "51BCEC8E50FCE357"
+					type: "xp"
+					xp: 25
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B79613C0E7F31C7"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Загрузка фрагментов и не только..."
+			tasks: [
+				{
+					id: "16918636E03DCCA7"
+					item: "ae2:spatial_anchor"
+					type: "item"
+				}
+				{
+					id: "56CC0805A3DDA8B3"
+					item: "ae2:condenser"
+					type: "item"
+				}
+			]
+			title: "&5&lСингулярность&r"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7313F6FFC5555184"]
+			dependency_requirement: "one_started"
+			description: ["&fПри взрыве сингулярности вместе с &bEnder Dust&r создаются две &dдополняющие сингулярности&r. Эта мощная реакция является ключом к разблокированию сложных сетевых систем во всех измерениях. &a Однако будьте осторожны; ТНТ - не игрушка!&r"]
+			icon: "ae2:singularity"
+			id: "208BD8C00949B0B8"
+			rewards: [
+				{
+					id: "4552F3C44D5D7F4E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DB45D72D313B026"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Создать дополнительные особенности!&r"
+			tasks: [
+				{
+					id: "5AF35F51F94298CE"
+					item: "ae2:tiny_tnt"
+					type: "item"
+				}
+				{
+					id: "2CE2A8C22FD17D92"
+					item: "ae2:singularity"
+					type: "item"
+				}
+				{
+					id: "732FF1174D0BD460"
+					item: "ae2:ender_dust"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "30FB5E36F8924640"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+			]
+			title: "&c&lКрошечный ТНТ &r"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["390A371FA8F483A8"]
+			dependency_requirement: "one_started"
+			description: ["&f&3Ускоритель роста&r помогает ускорить рост &aКристаллов кварца&r или растений, если их разместить рядом. Этот блок станет краеугольным камнем вашей кристаллической фермы, оптимизируя время и ресурсы. &aУскорьте свой прогресс!&r"]
+			id: "4213C099ABBB076B"
+			rewards: [
+				{
+					id: "550C51972E695770"
+					type: "xp"
+					xp: 12
+				}
+				{
+					exclude_from_claim_all: true
+					id: "54048BDEA42F3504"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					id: "2391C124F0C3C910"
+					item: "ae2:fluix_crystal"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Ускорьте рост кристаллов!&r"
+			tasks: [{
+				id: "1D1D0C62F1372646"
+				item: "ae2:growth_accelerator"
+				type: "item"
+			}]
+			title: "&3&lУскоритель роста&r"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["208BD8C00949B0B8"]
+			description: [
+				"&fПоместите &bКвантовую запутанную сингулярность&r в &8Квантовое кольцо&r, затем окружите его &8Квантовыми связующими камерами&r."
+				"Повторите это в другом месте с дополнительной сингулярностью, и ваши ME-сети соединятся независимо от расстояния. &aИдеально подходит для связи между измерениями&r, просто убедитесь, что фрагменты остаются загруженными!"
+			]
+			icon: "ae2:quantum_link"
+			id: "1BFB065967137BAC"
+			rewards: [
+				{
+					id: "2F4A112C6249D0C1"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B1D5715F9C1B83B"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					id: "22CD075A4239B06E"
+					item: "ae2:cell_component_64k"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Соединительные размеры..."
+			tasks: [
+				{
+					count: 16L
+					id: "44C7ACDF427E5BE2"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1ECFE10B3C5F3FDA"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6846805D68620673"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+			]
+			title: "&b&lME Квантовая связь"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1B0A430F3BC95790"]
+			description: ["&fУстановите &cPattern Provider&r наверху печи, чтобы автоматизировать рецепты плавки. Благодаря &eME Export Bus&r, подающему топливо, и &a Входной шине&r, возвращающей результаты в вашу сеть, вы получите полностью автоматизированную плавильную установку. &aГотовы автоматизировать плавильное производство?&r"]
+			icon: "minecraft:furnace"
+			id: "0FC3D81CC0C0F6D4"
+			rewards: [
+				{
+					id: "3BE8840E4816022E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7AB71F463ACE7855"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "3F09817F1B140598"
+					item: "ae2:spatial_cell_component_16"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Легкая плавка со скоростью автоматизации!&r"
+			tasks: [
+				{
+					id: "18CDB98D14A84682"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+				{
+					id: "4557482581ECEE6E"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+				{
+					id: "351FC8B750C90D0E"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "3C86D6BB1AE22D17"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:p2p_attunements/me_p2p_tunnel"
+						}
+					}
+					title: "Любой #ae2:p2p_attunements/me_p2p_tunnel"
+					type: "item"
+				}
+				{
+					id: "33A55D97BE293E13"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+			]
+			title: "&c&lАвтоматическая плавка&r"
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0417078431E10BB6"]
+			description: ["&fУвеличьте радиус действия вашего &5Беспроводного терминала&r, установив &6Усилитель сигнала&r на &6Cell Workbench&r. Максимизируйте доступ к сети на большем расстоянии!"]
+			id: "1FCF3BCB41D21BED"
+			rewards: [
+				{
+					id: "4D4DA02DE7D3BBB4"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "28198A5091EF8217"
+					table_id: 6686826548213387748L
+					type: "random"
+				}
+			]
+			subtitle: "&7Укрепите беспроводное соединение..."
+			tasks: [{
+				id: "2521B9679A06DB6E"
+				item: "ae2:wireless_booster"
+				type: "item"
+			}]
+			title: "&5&lУсилитель сигнала"
+			x: 2.0d
+			y: 7.5d
+		}
+	]
+	title: "&3 Прикладная энергетика"
+}

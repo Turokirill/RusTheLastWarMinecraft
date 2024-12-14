@@ -1,0 +1,1083 @@
+{
+	autofocus_id: "1076D3C3C295563C"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "createaddons"
+	group: "29555EBAB4C2D307"
+	icon: "create:wrench"
+	id: "3377747018790A18"
+	images: [{
+		click: "#0E4065C29F3AC512"
+		height: 2.0d
+		image: "create:textures/gui/logo.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: -0.5d
+		y: -3.5d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["09C93F4C67945379"]
+			dependency_requirement: "one_started"
+			description: [
+				"&fДобро пожаловать в мир &aCreate&r, где воображение встречается с &bинжинирингом&r!"
+				"Здесь ваши идеи — это топливо, а &6винтики&r ваших творений — это сердцебиение. Приготовьтесь погрузиться на механическую игровую площадку, где машины оживают по вашей команде."
+				""
+				"Каждое великое изобретение начинается с одной шестерни. &2Итак, что ВЫ создадите?&r"
+			]
+			hide_until_deps_complete: true
+			icon: "create:clipboard"
+			id: "0E4065C29F3AC512"
+			subtitle: "&7Вращайте шестерни, творите мечты...&r"
+			tasks: [{
+				id: "735C271AA5B3B294"
+				type: "checkmark"
+			}]
+			title: "&6&lМир инженерии!&r"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E4065C29F3AC512"]
+			description: [
+				"&fКаждая отличная машина начинается с основ! Эти скромные компоненты, &6валы&r, &6зубцы&r и многие другие, являются сердцем ваших механических творений. От &6вращения&r до &bstress&r, они необходимы для каждой конструкции, которую вы построите."
+				""
+				"&aДавайте включим эту передачу и начнем!&r"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "create:large_cogwheel"
+			id: "1076D3C3C295563C"
+			rewards: [
+				{
+					id: "3D929DC012B80378"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "685380AEFDD812FD"
+					item: "create:raw_zinc"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			subtitle: "&7Давайте начнем!&r"
+			tasks: [
+				{
+					id: "6864559C476CA1CF"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "72D30AE13522DCBB"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "42C67D13F9CD477A"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "7C6E8BEB67470FE9"
+					item: "create_dd:cog_crank"
+					type: "item"
+				}
+				{
+					id: "3155FD956553C919"
+					item: "create_dd:inverse_box"
+					type: "item"
+				}
+			]
+			title: "&6&lСила движения"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1076D3C3C295563C"]
+			dependency_requirement: "one_started"
+			description: ["&fБольшое водяное колесо&r использует силу потока воды для создания &cединиц напряжения&r и вращательного движения. Просто убедитесь, что с одной стороны у него постоянный поток, и наблюдайте, как ваши машины оживают! &aДавайте закрутим это колесо!&r"]
+			id: "34E394E1BE564873"
+			rewards: [{
+				id: "188D8C2D00DAC2FF"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			shape: "gear"
+			subtitle: "&7Поверните ситуацию в свою пользу...&r"
+			tasks: [{
+				id: "2AE9F60B9D36F2A7"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			title: "&9&lГидроэнергетика&r"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1076D3C3C295563C"]
+			dependency_requirement: "one_started"
+			description: [
+				"&fПришло время воспользоваться преимуществами мира природы! С помощью &2Подшипника ветряной мельницы&r вы можете соединять компоненты, которые свободно вращаются на ветру, генерируя как &bединицы напряжения (SU)&r, так и &aВращательную мощность (об/мин)&r."
+				"Щелкните правой кнопкой мыши по подшипнику после добавления &bПаруса ветряной мельницы&r, и наблюдайте, как ветер творит свое волшебство. Зачем позволять ветру просто дуть, если он может работать на вас? &aДавайте построим будущее на основе воздуха!&r"
+			]
+			icon: "create:windmill_bearing"
+			id: "3911BE7D397DDC9A"
+			rewards: [
+				{
+					id: "2FF5F86BF4AC4CE3"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					count: 6
+					id: "4A7D925E45C9B6E0"
+					item: "minecraft:white_wool"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Используйте силу неба...&r"
+			tasks: [
+				{
+					id: "27105205C3AF0A84"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					id: "298134279B8D1BC7"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			title: "&2&lШепот ветра"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1076D3C3C295563C"]
+			description: ["&fПришло время вступить в &cAge Steam&r! Подключите &6Паровой двигатель&r к &7котельным системам&r, чтобы генерировать вращательную силу и приводить в действие ваши машины. С наступлением эры пара ваше инженерное мастерство вот-вот взлетит до небес."]
+			id: "20BAAF267AF0919C"
+			rewards: [
+				{
+					id: "273984D0E74EBE43"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5BC32DD456239DA9"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Используйте силу пара!&r"
+			tasks: [{
+				id: "7F547C933DBAA37A"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "&c&lВозрождение эпохи Steam&r"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6777F6B07B6149E5"]
+			dependency_requirement: "one_started"
+			description: ["&fThe &bЗакрытый вентилятор(Encased Fan)&r предназначен не только для перемещения предметов по прямым линиям. Конечно, он может сносить предметы, но его истинная сила заключается в трансформации блоков, расположенных перед ним. Думайте об этом как о своем собственном &eAir Bender&r, только круче. Размещайте отдельные блоки, комбинируйте их с такими элементами, как &6огонь&r, &bвода&r или &eисточники тепла&r, и вы увидите, как перед вашими глазами разворачивается волшебство автоматизации."]
+			icon: "create:encased_fan"
+			id: "290F1D03C1A254AB"
+			rewards: [{
+				id: "708EA97419B61D47"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "&7Направьте силу воздуха...&r"
+			tasks: [
+				{
+					id: "34D86E0E6E5387B3"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "1903D5DF23F0DB34"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "2F823A327B91BF70"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "116AD8EB6718ADDD"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "213C3F069D9C2530"
+					item: "minecraft:soul_campfire"
+					type: "item"
+				}
+				{
+					id: "1D6CC1241EFEEC36"
+					item: "minecraft:powder_snow_bucket"
+					type: "item"
+				}
+				{
+					id: "2690EFDB7DC8A565"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "6E0D65888399394C"
+					item: "create:blaze_cake"
+					type: "item"
+				}
+			]
+			title: "&b&lПовелитель ветра"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B22D1366D9037BA"]
+			dependency_requirement: "one_started"
+			description: [
+				"&f&6Механический ремень&r – это идеальное решение для перемещения предметов по вашим приспособлениям. Горизонтальные, диагональные или вертикальные — эти ремни справятся со всем."
+				""
+				"&fНужно переместить элементы по вертикали? Используйте &aChute&r для плавного перемещения вверх или вниз. У вас слишком много блоков для хранения? &bItem Vault&r может обрабатывать их, предоставляя вам прямой доступ к его содержимому."
+				""
+				"Устали вручную распределять элементы? Используйте &eFunnel&r для автоматического извлечения и загрузки ваших запасов. &aАвтоматизация стала намного проще!&r"
+			]
+			icon: "create:belt_connector"
+			id: "0E0F54B73F12AB6C"
+			rewards: [{
+				id: "7575EEBFA7885EA7"
+				type: "xp"
+				xp: 24
+			}]
+			subtitle: "&7Легкое перемещение ресурсов...&r"
+			tasks: [
+				{
+					id: "37DA349154A517F5"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "2C215902526AEF43"
+					item: "create:depot"
+					type: "item"
+				}
+				{
+					id: "7EE19C353524DEFF"
+					item: "create:chute"
+					type: "item"
+				}
+				{
+					id: "16951E17E9FD6559"
+					item: "create:item_vault"
+					type: "item"
+				}
+				{
+					id: "04FF3428845692CB"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+			]
+			title: "&6&lОптимизированный транспорт&r"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["290F1D03C1A254AB"]
+			dependency_requirement: "one_started"
+			description: ["&f&6Жернов&r является неотъемлемой частью любого приспособления, которое необходимо для очистки и обработки материалов. Присоединив силу вращения, вы можете измельчить определенные предметы в более &6полезные&r компоненты. Нужны более качественные ингредиенты? Это инструмент для работы!"]
+			id: "4DC4C5A8D71733D9"
+			rewards: [{
+				id: "045E39076E75CF87"
+				type: "xp"
+				xp: 18
+			}]
+			subtitle: "&7Превращая камни в пыль...&r"
+			tasks: [{
+				id: "149A9E62498AE9C7"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "&6&lТочное шлифование&r"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DC4C5A8D71733D9"]
+			dependency_requirement: "one_started"
+			description: ["&f&6Механический пресс&r превращает слитки в листы один за другим. Но для тех, кто хочет массового производства, &9Гидравлический пресс&r может сгладить целые стопки сразу. &aВремя действовать!&r"]
+			icon: "create:mechanical_press"
+			id: "3B22D1366D9037BA"
+			rewards: [{
+				id: "45A71D9C6D22F689"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Ждут неотложные дела...&r"
+			tasks: [
+				{
+					id: "390B9FA37CC066FD"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "70FADC2BD7B6F77F"
+					item: "create_dd:hydraulic_press"
+					type: "item"
+				}
+			]
+			title: "&6&lНажмите!"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0E0F54B73F12AB6C"]
+			dependency_requirement: "one_started"
+			description: ["&f&6Механический миксер&r — это ваш путь к автоматизации в искусстве объединения материалов! Готовите ли вы &aBrass&r или готовите более сложные рецепты, этот миксер гарантирует, что все будет сделано с &eскоростью &r и &aточностью&r.  Просто убедитесь, что он подключен к достаточной &bвращательной мощности&r, чтобы он продолжал работать!"]
+			icon: "create:mechanical_mixer"
+			id: "43DCD078DBCF3EAB"
+			rewards: [
+				{
+					id: "0105A592D5E3AD7E"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F021376A0ECD209"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			subtitle: "&7Сочетание блеска и эффективности...&r"
+			tasks: [
+				{
+					id: "49C404FF22104405"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "0F84242682EA06E4"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "0EF523370466DC17"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "&6&lСмешай!"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3B22D1366D9037BA"]
+			dependency_requirement: "one_started"
+			description: ["&fПодключите свои машины и управляйте жидкостями как профессионал! &3Трубопроводы для жидкости&r позволяют беспрепятственно транспортировать жидкости между контейнерами, машинами и процессорами. Вам нужно хранить воду или переместить лаву в плавильную печь? Это путь. &aДавайте проведем эти трубы!&r"]
+			icon: "create:mechanical_pump"
+			id: "4F09AEB3009AED2B"
+			rewards: [
+				{
+					id: "5E634E5C3207540D"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3CBB876DA24031A0"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			subtitle: "&7Точное управление потоком...&r"
+			tasks: [
+				{
+					id: "623E7060F59C2423"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "66B49546DAB228D0"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "5061994CCCA70C80"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "01572E916B6D477B"
+					item: "create:spout"
+					type: "item"
+				}
+				{
+					id: "6B20E53889637242"
+					item: "create_dd:fluid_reservoir"
+					type: "item"
+				}
+				{
+					id: "0BA5C5AA444FE1C0"
+					item: "sliceanddice:sprinkler"
+					type: "item"
+				}
+			]
+			title: "&3&lЛогистика жидкостей&r"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1076D3C3C295563C"]
+			dependency_requirement: "one_completed"
+			description: ["&fС помощью &6Механической дрели&r, &2Харвестера&r и &cПилы&r вы сможете автоматизировать сбор ресурсов, как никогда раньше! Будь то подземная добыча полезных ископаемых или сбор урожая и бревен, эти мощные машины можно использовать в «хитростях», которые облегчат вашу жизнь. &aСоздайте свою установку и позвольте машинам выполнять тяжелую работу!&r"]
+			icon: "create:mechanical_drill"
+			id: "6777F6B07B6149E5"
+			rewards: [
+				{
+					id: "241CAF408FE42B75"
+					type: "xp"
+					xp: 12
+				}
+				{
+					count: 8
+					id: "72E1538462DB8492"
+					item: "create:andesite_alloy"
+					random_bonus: 8
+					type: "item"
+				}
+			]
+			subtitle: "&7Время автоматизации!&r"
+			tasks: [
+				{
+					id: "432F400C3D56C951"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "7A069DC72C5F7060"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					id: "3AD1913A9EF0C722"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+			]
+			title: "&6&lОсвоение машин&r"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E0F54B73F12AB6C"]
+			dependency_requirement: "one_started"
+			description: [
+				"&fДобро пожаловать в &6эпоху духовых инструментов&r! Благодаря мощи &6Механического рычага&r вы можете перемещать предметы между инвентарями, взаимодействовать с машинами и автоматизировать работу, как никогда раньше. Это ваш робот-помощник в этом механическом мире!"
+				""
+				"В сочетании с &aBrass Funnel&r вы можете точно контролировать поток предметов, точно определяя, что и сколько перемещается. И не забудьте &eAlternator&r, который преобразует вращательную силу в электрическую мощность со скоростью 32 об/мин или выше, обеспечивая максимальную энергоэффективность!"
+			]
+			icon: "create:mechanical_arm"
+			id: "7E3A257EB9105209"
+			rewards: [{
+				id: "6C296A1C23372778"
+				type: "xp"
+				xp: 27
+			}]
+			subtitle: "&7Латунь – ключ к мощности и автоматизации...&r"
+			tasks: [
+				{
+					id: "7C56075480A34498"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+				{
+					id: "5C74BA4E4B72D7C8"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "44569A9FCBE3E7AD"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+			]
+			title: "&6&lЛатунная революция"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7E3A257EB9105209"]
+			description: ["&fПришло время одеться и приступить к работе! Как инженеру, вам понадобятся &2планшет&r, &6очки&r и надежные &3инструменты&r, чтобы справиться с любой механической задачей. Следите за своими задачами, записывайте планы и следите за тем, чтобы все работало как часы. С такой настройкой вы всегда готовы. &aДавайте спроектируем что-то экстраординарное!&r"]
+			icon: "create:goggles"
+			id: "3E1F67E451783AAD"
+			rewards: [
+				{
+					id: "516C5BCF592ED3A4"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "126EE9AB93A2F346"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			subtitle: "&7Лучший набор инструментов для опытного инженера!&r"
+			tasks: [
+				{
+					id: "521DABB2BD40CE5F"
+					item: "create:clipboard"
+					type: "item"
+				}
+				{
+					id: "29F4BC7C5062ECF4"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "44A6271946CC2EFF"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1719A6C2E1CCF572"
+					item: "create_dd:multimeter"
+					type: "item"
+				}
+				{
+					id: "06FCDBF2DA4839BE"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "4A96D54AEB13882F"
+					item: "create:brown_toolbox"
+					type: "item"
+				}
+			]
+			title: "&6&lГотовность к проектированию&r"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DC4C5A8D71733D9"]
+			description: ["&fМощные &6Дробильные колеса&r с легкостью измельчают блоки и руду. Установите их на расстоянии друг от друга, и пусть вращающаяся сила сделает всю работу! Независимо от того, дробите ли вы &aБриллианты&r, &eЗолото&r или &7Булыжник&r, колеса максимизируют производительность ваших ресурсов. &aПоехали!&r"]
+			id: "78856E3D0CE65F3B"
+			rewards: [
+				{
+					id: "5A6BA92E73EBD10A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69832E73A6D038EA"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			subtitle: "&7Превратите руду в сокровища...&r"
+			tasks: [{
+				id: "3B7D88CA706E7B04"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "&6&lСила сокрушения"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["34E394E1BE564873"]
+			dependency_requirement: "one_started"
+			description: ["&fС &8Раскопочным буром&r и &aлесорубочной пилой&r ни один материал не останется без шансов! Бур идеально подходит для прорывания земли, а пила легко расчищает целые леса. Удерживайте &bShift&r, чтобы активировать специальную способность. Не забудьте взять с собой &7Магнит&r в левую руку, чтобы с легкостью собирать предметы! &aВремя сравнять горы и леса с силой и точностью!&r"]
+			icon: {
+				Count: 1
+				id: "create_dd:excavation_drill"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "51694F53A24EC620"
+			rewards: [{
+				id: "73A4BF1A74F6C86A"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			subtitle: "&7Инструменты разрушения...&r"
+			tasks: [
+				{
+					id: "300CE75F4BB8794E"
+					item: {
+						Count: 1
+						id: "create_dd:excavation_drill"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6BE53BBBB95B7826"
+					item: {
+						Count: 1
+						id: "create_dd:deforester_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52F0D824987B58F8"
+					item: "create_dd:magnet"
+					type: "item"
+				}
+			]
+			title: "&3&lМастер раскопок"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20BAAF267AF0919C"]
+			description: [
+				"&fИзвлекайте &6опыт&r из зачарованных предметов или с легкостью копируйте чары в книги."
+				""
+				"Благодаря возможностям &ehyper-XP&r вы можете вывести чары за пределы их естественных пределов. Представьте себе превращение &aSharpness V&r в &aSharpness VI&r!"
+			]
+			icon: "create_enchantment_industry:enchanting_guide"
+			id: "6A4EF323B80B5304"
+			rewards: [
+				{
+					id: "261EAC50028A2544"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6161043EA6A2EBE8"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			subtitle: "&7Извлечение магии, усиление силы...&r"
+			tasks: [
+				{
+					id: "0CCCCAF3C3DAB3BB"
+					item: "create_enchantment_industry:disenchanter"
+					type: "item"
+				}
+				{
+					id: "0DEEF20096A8D958"
+					item: "create_enchantment_industry:printer"
+					type: "item"
+				}
+				{
+					id: "2C25F885C645EBF9"
+					item: "create_enchantment_industry:hyper_experience_bottle"
+					type: "item"
+				}
+				{
+					id: "376B43DC82923F10"
+					item: "create_enchantment_industry:enchanting_guide"
+					type: "item"
+				}
+				{
+					id: "269C6850BD562345"
+					item: "create:experience_nugget"
+					type: "item"
+				}
+			]
+			title: "&b&lВысвобождение тайной энергии"
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6777F6B07B6149E5"]
+			dependency_requirement: "one_started"
+			description: ["&fЗачем тратить время на измельчение, если можно это автоматизировать? &6Slicer&r с точностью позаботится обо всех ваших кулинарных потребностях! Просто установите его, дайте ему свои рецепты и наблюдайте, как он нарезает кубиками, как профессиональный шеф-повар. Попрощайтесь со стрессом на кухне и позвольте начать &aавтономную&r &eкулинарную революцию&r! &aПриятного аппетита!&r"]
+			id: "6562A89DC54AEFBB"
+			rewards: [
+				{
+					id: "4FCCC9BBF0DDB66F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27D1579AEAEB9935"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			subtitle: "&7Секретное оружие шеф-повара...&r"
+			tasks: [{
+				id: "7620457394523D96"
+				item: "sliceanddice:slicer"
+				type: "item"
+			}]
+			title: "&a&lАвтоматизированный повар!"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["34E394E1BE564873"]
+			dependency_requirement: "one_started"
+			description: ["&fГотовы сесть на &b&lПолярный экспресс&r&f? Наступила эра поездов, и пришло время построить свою железнодорожную империю! Благодаря арсеналу путей, станций и мощных двигателей вы сможете перевозить грузы и пассажиров на огромные расстояния. От &6паровых чудес&r до &aсовременных высокоскоростных поездов&r — ваше путешествие начинается прямо сейчас. &5Не опоздай на поезд!&r"]
+			icon: "create:controls"
+			id: "7CA0E638ABC73900"
+			rewards: [
+				{
+					id: "500DFAD91E830AB1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5B955C7C83CADD02"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+				{
+					count: 8
+					id: "1D2E6A2155948C69"
+					item: "railways:track_monorail"
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					count: 2
+					id: "7386AB7E9F2EAB6A"
+					item: "railways:buffer"
+					type: "item"
+				}
+			]
+			subtitle: "&7Все на борт экспресса!&r"
+			tasks: [
+				{
+					id: "2D3CCB01885BD5D6"
+					item: "railways:benchcart"
+					type: "item"
+				}
+				{
+					id: "7C28D23A9AF51A50"
+					item: "railways:jukeboxcart"
+					type: "item"
+				}
+				{
+					id: "40F2A9D6E2AD6DBA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "railways:conductor_caps"
+						}
+					}
+					title: "Любые #railways:conductor_caps"
+					type: "item"
+				}
+				{
+					id: "44C505EBD99A5E21"
+					item: "railways:handcar"
+					type: "item"
+				}
+				{
+					id: "2A5E0865049FD69C"
+					item: "railways:track_monorail"
+					type: "item"
+				}
+				{
+					id: "1869231A09F6D601"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "313FAD27F8BDD4CB"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					id: "120117C5ABDAA52D"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "099FB16E59F7DFD7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:seats"
+						}
+					}
+					title: "Любой #create:seats"
+					type: "item"
+				}
+				{
+					id: "10F3AC18B67CEAD3"
+					item: "railways:track_switch_brass"
+					type: "item"
+				}
+				{
+					id: "5BE4F739CFF8B3D4"
+					item: "railways:semaphore"
+					type: "item"
+				}
+			]
+			title: "&6&lЛюбитель поездов"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["20BAAF267AF0919C"]
+			description: ["&fПришло время раскрыть мощь &aэкоэнергетики&r. Благодаря продуманному сочетанию &6биомасса&r и &eдвигателя внутреннего сгорания&r ваши машины будут работать на полной скорости. Готовы ли вы заправить свои изобретения экологически чистой энергией? &aНа волне экотехнологий&r и позвольте растениям сделать тяжелую работу. Пришло время зажечь эти двигатели..."]
+			icon: "createaddition:bioethanol_bucket"
+			id: "1F11AC600AB2653A"
+			rewards: [{
+				id: "6304D9C927336F61"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			subtitle: "&7Расширяя пределы своей энергии... &r"
+			tasks: [
+				{
+					id: "20D177B3BE558E64"
+					item: "createaddition:bioethanol_bucket"
+					type: "item"
+				}
+				{
+					id: "41EB4476F43DA68F"
+					item: "createaddition:straw"
+					type: "item"
+				}
+				{
+					id: "16E7CCD43EF3FDBE"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "&6&lПерегрев!&r"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["290F1D03C1A254AB"]
+			dependency_requirement: "one_started"
+			description: [
+				"&fГотовы повысить эффективность вашей системы вентиляторов? С помощью этих обновлений вы сможете расширить радиус действия своего &bEncased Fan&r, позволяя ему достигать большего и быстрее обрабатывать предметы! Вы не только расширите его охват, но и оптимизируете всю настройку."
+				""
+				"&6Совет: для максимальной эффективности всегда следите за плавностью воздушного потока!&r"
+			]
+			icon: "create_dd:industrial_fan"
+			id: "5FB0B560078DA974"
+			rewards: [
+				{
+					id: "168C790DCB7BC397"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "364124681512AAC5"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "07253F0B5962F836"
+					item: "create:builders_tea"
+					random_bonus: 16
+					type: "item"
+				}
+			]
+			subtitle: "&7Увеличьте мощность вашего вентилятора!&r"
+			tasks: [
+				{
+					id: "0E7B91B965DB0237"
+					item: "create_dd:splashing_sail"
+					type: "item"
+				}
+				{
+					id: "4AAB7ACA5E9747D1"
+					item: "create_dd:haunting_sail"
+					type: "item"
+				}
+				{
+					id: "0D8C20EEB91B9B5A"
+					item: "create_dd:blasting_sail"
+					type: "item"
+				}
+				{
+					id: "4D885FC2B13BF0F0"
+					item: "create_dd:smoking_sail"
+					type: "item"
+				}
+				{
+					id: "64B121EBD4A293DA"
+					item: "create_dd:freezing_sail"
+					type: "item"
+				}
+				{
+					id: "54A825A5AEE4B000"
+					item: "create_dd:sanding_sail"
+					type: "item"
+				}
+				{
+					id: "1F6CE6B411969BEE"
+					item: "create_dd:industrial_fan"
+					type: "item"
+				}
+			]
+			title: "&b&lФантастические обновления&r"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1076D3C3C295563C"]
+			description: ["&f&6Кинетический двигатель&r обеспечивает вращательное движение, но не дайте себя обмануть: он не генерирует &cЕдиницы напряжения&r (SU). Чтобы обеспечить питание ваших машин, вам необходимо объединить его с другими компонентами. Готовы увидеть, что крутит шестерни? &aДержись крепче!&r"]
+			id: "4F2B7FE30E37EECA"
+			rewards: [
+				{
+					id: "1258245BB0B1D044"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C380C5EFA394F84"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			size: 0.8d
+			subtitle: "&7Создание вращательной силы, один оборот за раз...&r"
+			tasks: [{
+				id: "087EDA7B25AC067A"
+				item: "create_dd:kinetic_motor"
+				type: "item"
+			}]
+			title: "&6&lКинетическое динамо&r"
+			x: 0.0d
+			y: 0.4d
+		}
+		{
+			dependencies: ["1076D3C3C295563C"]
+			description: ["&fЗнаете ли вы, что огонь может питать не только печь? Прикрепите &cДвигатель&r к вашей печи, подсоедините &6Маховик&r и наблюдайте, как он генерирует &bSU&r и &aRPM&r из тепла пламени.  Это все равно, что превратить уголь в чистую энергию! Запустите эту печь и наполните свой мир неудержимой силой огня. &eВремя зажечь ваши машины!&r"]
+			icon: "create_dd:furnace_engine"
+			id: "763081F43796C5D4"
+			rewards: [
+				{
+					id: "32AFD2F779C57D37"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F78BFA15D0942F5"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2EF945E508EC2F5C"
+					table_id: 5274889097794495006L
+					type: "choice"
+				}
+			]
+			shape: "gear"
+			subtitle: "&7Превратить огонь в силу...&r"
+			tasks: [
+				{
+					id: "150CD76413886993"
+					item: "create_dd:furnace_engine"
+					type: "item"
+				}
+				{
+					id: "7AED1E8ED5C54952"
+					item: "create:flywheel"
+					type: "item"
+				}
+				{
+					id: "2CB6E24D01059FE2"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
+			title: "&c&lПечь силы"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7E3A257EB9105209"]
+			dependency_requirement: "one_started"
+			description: [
+				"&f&n&7Блок&r&r — ваш идеальный инструмент для земляных работ! Он действует как гигантская буровая головка, пробивая блоки и расчищая путь для ваших приспособлений. Прикрепите его к движущейся конструкции и наблюдайте, как он уничтожает все на своем пути!"
+				""
+				"&fСоедините его с &6Системой шкивов&r, убедившись, что все блоки правильно склеены вместе, и вы получите движущую силу, способную выполнять раскопки!"
+				""
+				"&7Будь то добыча полезных ископаемых или прокладка туннелей, буровой блок выполнит свою работу!&r"
+			]
+			icon: "create_dd:bore_block"
+			id: "03905116A2D74E00"
+			rewards: [
+				{
+					id: "79058EEA94C651F9"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E8721ED8BB65598"
+					table_id: 5274889097794495006L
+					type: "random"
+				}
+			]
+			subtitle: "&7Прорыв в промышленную мощь!&r"
+			tasks: [
+				{
+					id: "4617183E1AAEDED6"
+					item: "create_dd:bore_block"
+					type: "item"
+				}
+				{
+					id: "3E58DB30749668ED"
+					item: "create:rope_pulley"
+					type: "item"
+				}
+				{
+					id: "3B203E1622F81D04"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&7&l Копаем!"
+			x: 1.5d
+			y: 5.5d
+		}
+	]
+	title: "&6 Создание механизмов"
+}

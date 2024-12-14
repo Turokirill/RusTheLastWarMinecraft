@@ -1,0 +1,540 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "herramientas"
+	group: "31FB61CF8D7636BB"
+	icon: {
+		Count: 1
+		id: "advancednetherite:netherite_diamond_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "1D4E28E676B3A848"
+	images: [
+		{
+			height: 1.0d
+			image: "simplyswords:item/dreadtide_base_anim"
+			rotation: 0.0d
+			width: 0.016666666666666666d
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "simplyswords:item/dreadtide_base_anim"
+			rotation: 0.0d
+			width: 0.016666666666666666d
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "simplyswords:item/storms_edge_layer_e"
+			rotation: 0.0d
+			width: 0.016666666666666666d
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/gui/quests/17.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.105427357601002E-15d
+			y: -1.2357142857142946d
+		}
+		{
+			height: 4.0d
+			image: "minecraft:textures/gui/quests/12.png"
+			rotation: 0.0d
+			width: 2.048780487804878d
+			x: 1.971428571428568d
+			y: -2.150000000000027d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["62BC7AD4C156AB4C"]
+			dependency_requirement: "one_started"
+			description: ["&fОт дерева до незерита — эта глава проведет вас через каждый уровень инструментов. Будьте готовы повысить уровень своего мастерства! &aНачнем!&r"]
+			hide_until_deps_complete: true
+			icon: "create:brass_hand"
+			id: "7D0565FA539829CD"
+			subtitle: "&7Время творить величие..."
+			tasks: [{
+				id: "7B693CF054A82570"
+				type: "checkmark"
+			}]
+			title: "&6&lВладение инструментами&r"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D0565FA539829CD"]
+			description: ["&fНачните с основ. Деревянные инструменты могут прослужить недолго, но они — ваш первый шаг к мастерству. &aДавайте рубить и мастерить!&r"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "6456620BAB9213AD"
+			rewards: [
+				{
+					id: "63A41524A2104C73"
+					type: "xp"
+					xp: 5
+				}
+				{
+					count: 2
+					id: "62FDB60B227D1382"
+					item: "aquaculture:box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Каждое путешествие начинается с малого..."
+			tasks: [{
+				id: "32B4FCD0015EB141"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&a&lДеревянные инструменты&r"
+			x: 0.0d
+			y: -2.875d
+		}
+		{
+			dependencies: ["1FA77B461ABADE19"]
+			description: ["&fВы обновили &7железные&r инструменты. Больше долговечности, больше эффективности. Вы на пути к тому, чтобы стать легендой! &aЯ умнее!&r"]
+			id: "46098A6CCD2243F5"
+			rewards: [
+				{
+					id: "2FA9AD78D6539F07"
+					type: "xp"
+					xp: 25
+				}
+				{
+					count: 3
+					id: "4DF72EEA33B685C8"
+					item: "aquaculture:lockbox"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Острее и сильнее..."
+			tasks: [{
+				id: "205FEE61667639D4"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&7&lЖелезный Механизм&r"
+			x: 0.0d
+			y: -4.660714285714292d
+		}
+		{
+			dependencies: ["6456620BAB9213AD"]
+			description: ["&fКаменные инструменты обеспечивают долговечность и прочность. Пришло время оставить деревянную эпоху позади и отправиться в приключение! &aПродолжайте добычу!&r"]
+			id: "1FA77B461ABADE19"
+			rewards: [
+				{
+					id: "5D2B54B40C438DC0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 5
+					id: "668D9C8875820AAB"
+					item: "aquaculture:box"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Лучшие инструменты, большие мечты..."
+			tasks: [{
+				id: "4FC584947B4974BF"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&8&lКаменный век&r"
+			x: 0.0d
+			y: -3.767857142857146d
+		}
+		{
+			dependencies: ["46098A6CCD2243F5"]
+			description: ["&fУровень &bDiamond&r представляет собой истинное мастерство. Прочный, красивый и долговечный. Только не потеряйте его в лаве! &aПродолжайте сиять!&r"]
+			id: "07B0A45B0D6EE17E"
+			rewards: [
+				{
+					id: "2C42D21CD02D9F78"
+					type: "xp"
+					xp: 35
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1AD9B4EFF3269602"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Сияйте ярко, как бриллиант..."
+			tasks: [{
+				id: "679256814CC07537"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&b&lАлмаз&r"
+			x: 0.0d
+			y: -5.5535714285714235d
+		}
+		{
+			dependencies: ["07B0A45B0D6EE17E"]
+			description: ["&fВы достигли вершины с помощью инструментов &8Незерита&r. Последний уровень. Готовы справиться с самыми сложными задачами? &aДавайте покорим мир!&r"]
+			id: "6F7C1048FAC3BE58"
+			rewards: [
+				{
+					id: "2669E43BEEE1025D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F5FA02D17FB3E31"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Из глубин Пустоты..."
+			tasks: [{
+				id: "0476C307A06818C1"
+				item: {
+					Count: 1
+					id: "minecraft:netherite_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&8&lНетерит&r"
+			x: 0.0d
+			y: -6.446428571428569d
+		}
+		{
+			dependencies: ["6F7C1048FAC3BE58"]
+			description: ["&fИспользуйте темную силу &3Хранителя&r и куйте инструменты, пропитанные ее силой. &3Набор инструментов Warden&r не имеет себе равных, когда дело доходит до исследования самых глубоких пещер. Будьте осторожны, за его силу приходится платить. &aГотовы ли вы овладеть силой теней?&r"]
+			id: "54D5FD40C00C7488"
+			rewards: [
+				{
+					id: "0E0280EE74AD320D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "673734B347B24497"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Тьма дает вам силы..."
+			tasks: [{
+				id: "39BCA5304D8D9901"
+				item: {
+					Count: 1
+					id: "deeperdarker:warden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3&lМощь Стража&r"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["46098A6CCD2243F5"]
+			description: ["&fУровень &2Террастали&r — один из самых мощных в Ботании. Этот комплект брони не только обеспечивает регенерацию здоровья, но и улучшает ваши магические способности, что делает его обязательным для любого природного мага. &aСобирайте детали и готовьтесь к самым трудным битвам!&r"]
+			hide_dependency_lines: true
+			id: "6280595E676AB686"
+			rewards: [
+				{
+					id: "59C05FC3AE64F3FB"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4613F6D5091FAF9C"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Используйте силу природы..."
+			tasks: [{
+				id: "19451FB36029D864"
+				item: {
+					Count: 1
+					id: "botania:terra_pick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&2&lСила Террастали&r"
+			x: -2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6280595E676AB686"]
+			description: ["&fВыкованный из мистического материала &dЭлементиума&r, этот уровень обладает уникальными способностями. В этом наборе пикси помогут вам в бою, что сделает вас грозной силой в любой магической битве. &aВремя овладеть силой фейри!&r"]
+			hide_until_deps_visible: true
+			id: "566A6C352F359BA5"
+			rewards: [
+				{
+					id: "166DE5F94B1743B4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B2A03628B203E12"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Благословение Пикси..."
+			tasks: [{
+				id: "03736DA18193FCF5"
+				item: {
+					Count: 1
+					id: "botania:elementium_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&d&lМагия Элементиума&r"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["07B0A45B0D6EE17E"]
+			description: ["&fИспользуйте мощь инструментов &dGlided Rose&r, сочетая механику для расширения своих возможностей. Создавайте, автоматизируйте и творите, как никогда раньше, с помощью этого очаровательного уровня. &aГотовы творить чудеса?&r"]
+			hide_dependency_lines: true
+			id: "698AF336C46D6E7C"
+			rewards: [
+				{
+					id: "09624E83F5609AF0"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24D34C37DD381C63"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "11C81410C4D9352E"
+					item: "create:experience_block"
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Сила через созидание..."
+			tasks: [{
+				id: "33F55446FC1AA2F4"
+				item: {
+					Count: 1
+					id: "create_dd:gilded_rose_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&d&lСкользящая роза&r"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6F7C1048FAC3BE58"]
+			description: ["&fЛучшее из обоих миров: объедините прочность &9Незерита&r и остроту &bАлмаза&r, чтобы создавать инструменты, превосходящие все материалы. &9Набор инструментов Netherite-Diamond&r предлагает непревзойденную эффективность и прочность. &aПриготовьтесь к самым сложным испытаниям!&r"]
+			id: "3CDBCBDDFA426865"
+			rewards: [
+				{
+					id: "04CAC2D9C6C51446"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E711C04C29A422E"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Сильнее, чем когда-либо прежде..."
+			tasks: [{
+				id: "1DDF2EA23996EE7B"
+				item: {
+					Count: 1
+					id: "advancednetherite:netherite_diamond_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&9&lНетерит, усиленный алмазом&r"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["46098A6CCD2243F5"]
+			description: ["&fИнструменты и броня &bРезонариума&r выкованы из сущности Иной Стороны. Вооружитесь этим мощным набором и доминируйте в своих приключениях. &aВремя создавать инструменты для неизведанного!&r"]
+			hide_dependency_lines: true
+			id: "0C7E854A3011298D"
+			rewards: [
+				{
+					id: "0470A15773CCCE83"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05C5FD9C26EDA317"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "141B5484DA9C845C"
+					item: "deeperdarker:ancient_vase"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Сила из глубокой тьмы..."
+			tasks: [{
+				id: "03A34762EBA9FB93"
+				item: {
+					Count: 1
+					id: "deeperdarker:resonarium_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&b&lРезонариумное оборудование"
+			x: 1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6F7C1048FAC3BE58"]
+			description: ["&f&6Dimensional Carver&r позволяет вам прорезать реальность, создавая двери между мирами. Используйте его, чтобы открывать порталы и исследовать неизведанное. Но будьте осторожны: это требует точности и терпения. &aГотовы ли вы проложить свой путь?&r"]
+			hide_dependency_lines: true
+			id: "042862E1A7DD80DE"
+			rewards: [
+				{
+					id: "09DE9A6E544CA0C5"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CAC6FF0AD28A516"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Вырезать размеры..."
+			tasks: [{
+				id: "394D148E94C2676B"
+				item: {
+					Count: 1
+					id: "alexsmobs:dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6&lРазмерный резчик&r"
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["042862E1A7DD80DE"]
+			description: ["&f&5Разрушитель Измерений&r — нестабильная версия своего аналога. Оно открывает двери, но в более непредсказуемые сферы. Обращайтесь осторожно, это может сломать не только реальность. &aБудете ли вы рисковать неизвестным?&r"]
+			hide_until_deps_visible: true
+			id: "4083C3A4D70C2762"
+			rewards: [
+				{
+					id: "06C452745FBEFB92"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B6C9D26CC8D059A"
+					table_id: 5810327260786251316L
+					type: "random"
+				}
+			]
+			size: 1.0d
+			subtitle: "&7Изломанный путь в новые миры..."
+			tasks: [{
+				id: "3F19B8969E0702B8"
+				item: {
+					Count: 1
+					id: "alexsmobs:shattered_dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&5&lРазбитый резчик&r"
+			x: 3.0d
+			y: -6.0d
+		}
+	]
+	title: "&6 Обновление \\&\\ Доминировать"
+}
